@@ -1,2 +1,6 @@
-# st5-escape-to-eclipse-fv
-This is an extended version of our ScrumTeam5 "Escape-to-Eclipse" Game in conceptional progamming style. The other repo is result-based and designed for basic school requirements. The idea and concept of the game story is still the same. More in README.md
+# Escape To Eclipse :alien:
+### Concept Description:
+
+:information_source: This game is primary about the colonialisation of new scapes in further space, we don't know already. You and your SpaceShip are on an exploration mission. Some planets are friendly and some planets are hostile. While playing you have to get new ressources for further exploration from uknown planets. You can trade or you have to fight. 
+
+**(Further Description will follow soon!)**
