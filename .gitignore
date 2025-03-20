@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Exclude build folder from git repo (user has to compile it)
+./build

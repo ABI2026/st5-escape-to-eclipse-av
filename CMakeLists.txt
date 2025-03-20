@@ -7,6 +7,19 @@ set(LOCAL_SOURCES_PATH ${CMAKE_SOURCE_DIR}/src)
 set(LOCAL_INCLUDE_PATH ${CMAKE_SOURCE_DIR}/include)
 set(LIB_PATH ${CMAKE_SOURCE_DIR}/lib)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# Remotely include SFML LIB
+include(FetchContent)
+FetchContent_Declare(SFML
+    GIT_REPOSITORY https://github.com/SFML/SFML.git
+    GIT_TAG 3.0.0
+    GIT_SHALLOW ON
+    EXCLUDE_FROM_ALL
+    SYSTEM)
+FetchContent_MakeAvailable(SFML)
+
+
 # Get all local files recursively
 file(GLOB_RECURSE SRC_FILES ${LOCAL_SOURCES_PATH}/*.cpp)
 file(GLOB_RECURSE HEADERS ${LOCAL_INCLUDE_PATH}/*.hpp)
@@ -18,4 +31,6 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 add_subdirectory(${LIB_PATH})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${LOCAL_INCLUDE_PATH})
+
 target_link_libraries(${PROJECT_NAME} PUBLIC SFML_GAME_LIB)
+target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics)
