@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libSFML_GAME_LIB.so -o libSFML_GAME_LIB.so CMakeFiles/SFML_GAME_LIB.dir/src/EventSystem.cpp.o
