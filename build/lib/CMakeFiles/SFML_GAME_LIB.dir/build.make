@@ -95,6 +95,9 @@ SFML_GAME_LIB_EXTERNAL_OBJECTS =
 
 lib/libSFML_GAME_LIB.so: lib/CMakeFiles/SFML_GAME_LIB.dir/src/EventSystem.cpp.o
 lib/libSFML_GAME_LIB.so: lib/CMakeFiles/SFML_GAME_LIB.dir/build.make
+lib/libSFML_GAME_LIB.so: _deps/sfml-build/lib/libsfml-graphics-d.so.2.6.2
+lib/libSFML_GAME_LIB.so: _deps/sfml-build/lib/libsfml-window-d.so.2.6.2
+lib/libSFML_GAME_LIB.so: _deps/sfml-build/lib/libsfml-system-d.so.2.6.2
 lib/libSFML_GAME_LIB.so: lib/CMakeFiles/SFML_GAME_LIB.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libSFML_GAME_LIB.so"
 	cd /home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SFML_GAME_LIB.dir/link.txt --verbose=$(VERBOSE)

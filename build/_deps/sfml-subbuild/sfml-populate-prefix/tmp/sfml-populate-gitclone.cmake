@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"
-          checkout "3.0.0" --
+          checkout "2.6.x" --
   WORKING_DIRECTORY "/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/_deps/sfml-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '3.0.0'")
+  message(FATAL_ERROR "Failed to checkout tag: '2.6.x'")
 endif()
 
 set(init_submodules TRUE)

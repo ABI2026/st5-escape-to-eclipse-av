@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DSFML_GAME_LIB_EXPORTS
 
-CXX_INCLUDES = -I/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/lib/include
+CXX_INCLUDES = -I/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/lib/include -isystem /home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/_deps/sfml-src/include
 
-CXX_FLAGS = -std=gnu++2a -fPIC
+CXX_FLAGS = -g -std=gnu++2a -fPIC
 

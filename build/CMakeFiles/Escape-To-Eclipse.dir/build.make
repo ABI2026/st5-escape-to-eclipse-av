@@ -96,19 +96,9 @@ Escape__To__Eclipse_EXTERNAL_OBJECTS =
 bin/Escape-To-Eclipse: CMakeFiles/Escape-To-Eclipse.dir/src/main.cpp.o
 bin/Escape-To-Eclipse: CMakeFiles/Escape-To-Eclipse.dir/build.make
 bin/Escape-To-Eclipse: lib/libSFML_GAME_LIB.so
-bin/Escape-To-Eclipse: _deps/sfml-build/lib/libsfml-graphics.a
-bin/Escape-To-Eclipse: _deps/sfml-build/lib/libsfml-window.a
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libXrandr.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libXcursor.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libXrender.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libXfixes.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libXi.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libXext.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libX11.so
-bin/Escape-To-Eclipse: _deps/sfml-build/lib/libsfml-system.a
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libGL.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libudev.so
-bin/Escape-To-Eclipse: /usr/lib/x86_64-linux-gnu/libfreetype.so
+bin/Escape-To-Eclipse: _deps/sfml-build/lib/libsfml-graphics-d.so.2.6.2
+bin/Escape-To-Eclipse: _deps/sfml-build/lib/libsfml-window-d.so.2.6.2
+bin/Escape-To-Eclipse: _deps/sfml-build/lib/libsfml-system-d.so.2.6.2
 bin/Escape-To-Eclipse: CMakeFiles/Escape-To-Eclipse.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/Escape-To-Eclipse"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Escape-To-Eclipse.dir/link.txt --verbose=$(VERBOSE)

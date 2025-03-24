@@ -12,8 +12,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/CircleShape.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
@@ -21,21 +19,16 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/Shape.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -49,22 +42,30 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/specfun.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -82,12 +83,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cstddef \
+  /usr/include/c++/9/cmath \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -95,23 +97,239 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/CircleShape.cpp.
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tr1/bessel_function.tcc \
+  /usr/include/c++/9/tr1/beta_function.tcc \
+  /usr/include/c++/9/tr1/ell_integral.tcc \
+  /usr/include/c++/9/tr1/exp_integral.tcc \
+  /usr/include/c++/9/tr1/gamma.tcc \
+  /usr/include/c++/9/tr1/hypergeometric.tcc \
+  /usr/include/c++/9/tr1/legendre_function.tcc \
+  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/9/tr1/poly_hermite.tcc \
+  /usr/include/c++/9/tr1/poly_laguerre.tcc \
+  /usr/include/c++/9/tr1/riemann_zeta.tcc \
+  /usr/include/c++/9/tr1/special_function_util.h \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
+
+_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.o: _deps/sfml-src/src/SFML/Graphics/Color.cpp \
+  _deps/sfml-src/include/SFML/Config.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/backward/binders.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/alloc_traits.h \
+  /usr/include/c++/9/bits/allocator.h \
+  /usr/include/c++/9/bits/basic_string.h \
+  /usr/include/c++/9/bits/basic_string.tcc \
+  /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/concept_check.h \
+  /usr/include/c++/9/bits/cpp_type_traits.h \
+  /usr/include/c++/9/bits/cxxabi_forced.h \
+  /usr/include/c++/9/bits/cxxabi_init_exception.h \
+  /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
+  /usr/include/c++/9/bits/exception.h \
+  /usr/include/c++/9/bits/exception_defines.h \
+  /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/functexcept.h \
+  /usr/include/c++/9/bits/functional_hash.h \
+  /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
+  /usr/include/c++/9/bits/localefwd.h \
+  /usr/include/c++/9/bits/memoryfwd.h \
+  /usr/include/c++/9/bits/move.h \
+  /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
+  /usr/include/c++/9/bits/ostream_insert.h \
+  /usr/include/c++/9/bits/postypes.h \
+  /usr/include/c++/9/bits/predefined_ops.h \
+  /usr/include/c++/9/bits/ptr_traits.h \
+  /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/stl_construct.h \
+  /usr/include/c++/9/bits/stl_function.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_iterator.h \
+  /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/string_view.tcc \
+  /usr/include/c++/9/bits/stringfwd.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  /usr/include/c++/9/cctype \
+  /usr/include/c++/9/cerrno \
+  /usr/include/c++/9/clocale \
+  /usr/include/c++/9/cstdint \
+  /usr/include/c++/9/cstdio \
+  /usr/include/c++/9/cstdlib \
+  /usr/include/c++/9/cwchar \
+  /usr/include/c++/9/debug/assertions.h \
+  /usr/include/c++/9/debug/debug.h \
+  /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
+  /usr/include/c++/9/ext/alloc_traits.h \
+  /usr/include/c++/9/ext/atomicity.h \
+  /usr/include/c++/9/ext/new_allocator.h \
+  /usr/include/c++/9/ext/numeric_traits.h \
+  /usr/include/c++/9/ext/string_conversions.h \
+  /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
+  /usr/include/c++/9/initializer_list \
+  /usr/include/c++/9/iosfwd \
+  /usr/include/c++/9/limits \
+  /usr/include/c++/9/new \
+  /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/9/pstl/pstl_config.h \
+  /usr/include/c++/9/stdexcept \
+  /usr/include/c++/9/string \
+  /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/type_traits \
+  /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
@@ -207,9 +425,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
   _deps/sfml-src/include/SFML/Graphics/ConvexShape.hpp \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
@@ -217,21 +433,16 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/Shape.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -245,22 +456,29 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -278,12 +496,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -291,23 +509,29 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
@@ -400,10 +624,9 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ConvexShape.cpp.
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _deps/sfml-src/src/SFML/Graphics/Font.cpp \
+  _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Font.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glyph.hpp \
@@ -411,37 +634,30 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Err.hpp \
-  _deps/sfml-src/include/SFML/System/Exception.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/InputStream.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  _deps/sfml-src/src/SFML/System/Utils.hpp \
+  _deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
+  _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -451,10 +667,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -462,14 +674,10 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/c++/9/bits/hashtable_policy.h \
   /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
@@ -477,19 +685,14 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -499,10 +702,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
@@ -510,23 +715,17 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
   /usr/include/c++/9/cmath \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
   /usr/include/c++/9/cstring \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -535,28 +734,22 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/streambuf \
@@ -602,7 +795,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/freetype2/freetype/ftsystem.h \
   /usr/include/freetype2/freetype/fttypes.h \
   /usr/include/freetype2/ft2build.h \
-  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -703,9 +895,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Font.cpp.o: _dep
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -727,18 +917,15 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.o: _
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -746,39 +933,24 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.o: _
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
-  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
@@ -789,64 +961,47 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.o: _
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
-  /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
-  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
   /usr/include/c++/9/new \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
   /usr/include/c++/9/system_error \
-  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
-  /usr/include/c++/9/utility \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -927,9 +1082,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.o: _
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -942,30 +1095,21 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLCheck.cpp.o: _
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp.o: _deps/sfml-src/src/SFML/Graphics/GLExtensions.cpp \
   _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Err.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
-  _deps/sfml-src/include/SFML/System/Vector2.hpp \
-  _deps/sfml-src/include/SFML/System/Vector2.inl \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/Window/Context.hpp \
+  _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
-  /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
@@ -981,7 +1125,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
-  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
@@ -997,10 +1140,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
@@ -1011,18 +1150,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
-  /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
-  /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
@@ -1034,10 +1167,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
-  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
@@ -1046,11 +1177,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/ostream \
-  /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/stdlib.h \
@@ -1058,10 +1186,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
   /usr/include/c++/9/system_error \
-  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
-  /usr/include/c++/9/utility \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1161,17 +1287,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/GLExtensions.cpp
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.o: _deps/sfml-src/src/SFML/Graphics/Glsl.cpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glsl.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glsl.inl \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/System/Vector3.hpp \
@@ -1179,7 +1300,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.o: _dep
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
@@ -1237,11 +1357,9 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.o: _dep
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -1364,45 +1482,32 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Glsl.cpp.o: _dep
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _deps/sfml-src/src/SFML/Graphics/Image.cpp \
-  _deps/sfml-src/extlibs/headers/stb_image/stb_image.h \
-  _deps/sfml-src/extlibs/headers/stb_image/stb_image_write.h \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Err.hpp \
-  _deps/sfml-src/include/SFML/System/Exception.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
-  _deps/sfml-src/include/SFML/System/InputStream.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
-  _deps/sfml-src/src/SFML/System/Utils.hpp \
+  _deps/sfml-src/src/SFML/Graphics/ImageLoader.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -1412,10 +1517,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -1423,14 +1524,10 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/bits/hashtable_policy.h \
   /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
@@ -1438,18 +1535,11 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
@@ -1462,7 +1552,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
@@ -1472,23 +1561,16 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cmath \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
   /usr/include/c++/9/cstring \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -1497,31 +1579,229 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
   /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/math.h \
-  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
   /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/stdexcept \
+  /usr/include/c++/9/streambuf \
+  /usr/include/c++/9/string \
+  /usr/include/c++/9/string_view \
+  /usr/include/c++/9/system_error \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/type_traits \
+  /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
+
+_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/ImageLoader.cpp.o: _deps/sfml-src/src/SFML/Graphics/ImageLoader.cpp \
+  _deps/sfml-src/extlibs/headers/stb_image/stb_image.h \
+  _deps/sfml-src/extlibs/headers/stb_image/stb_image_write.h \
+  _deps/sfml-src/include/SFML/Config.hpp \
+  _deps/sfml-src/include/SFML/System/Err.hpp \
+  _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/InputStream.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  _deps/sfml-src/include/SFML/System/Vector2.hpp \
+  _deps/sfml-src/include/SFML/System/Vector2.inl \
+  _deps/sfml-src/src/SFML/Graphics/ImageLoader.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
+  /usr/include/c++/9/backward/binders.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/alloc_traits.h \
+  /usr/include/c++/9/bits/allocator.h \
+  /usr/include/c++/9/bits/basic_ios.h \
+  /usr/include/c++/9/bits/basic_ios.tcc \
+  /usr/include/c++/9/bits/basic_string.h \
+  /usr/include/c++/9/bits/basic_string.tcc \
+  /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/concept_check.h \
+  /usr/include/c++/9/bits/cpp_type_traits.h \
+  /usr/include/c++/9/bits/cxxabi_forced.h \
+  /usr/include/c++/9/bits/cxxabi_init_exception.h \
+  /usr/include/c++/9/bits/exception.h \
+  /usr/include/c++/9/bits/exception_defines.h \
+  /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/functexcept.h \
+  /usr/include/c++/9/bits/functional_hash.h \
+  /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/ios_base.h \
+  /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/bits/locale_classes.h \
+  /usr/include/c++/9/bits/locale_classes.tcc \
+  /usr/include/c++/9/bits/locale_facets.h \
+  /usr/include/c++/9/bits/locale_facets.tcc \
+  /usr/include/c++/9/bits/localefwd.h \
+  /usr/include/c++/9/bits/memoryfwd.h \
+  /usr/include/c++/9/bits/move.h \
+  /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/ostream.tcc \
+  /usr/include/c++/9/bits/ostream_insert.h \
+  /usr/include/c++/9/bits/postypes.h \
+  /usr/include/c++/9/bits/predefined_ops.h \
+  /usr/include/c++/9/bits/ptr_traits.h \
+  /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/specfun.h \
+  /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/stl_construct.h \
+  /usr/include/c++/9/bits/stl_function.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_iterator.h \
+  /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stream_iterator.h \
+  /usr/include/c++/9/bits/streambuf.tcc \
+  /usr/include/c++/9/bits/streambuf_iterator.h \
+  /usr/include/c++/9/bits/string_view.tcc \
+  /usr/include/c++/9/bits/stringfwd.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  /usr/include/c++/9/cctype \
+  /usr/include/c++/9/cerrno \
+  /usr/include/c++/9/clocale \
+  /usr/include/c++/9/cmath \
+  /usr/include/c++/9/cstdint \
+  /usr/include/c++/9/cstdio \
+  /usr/include/c++/9/cstdlib \
+  /usr/include/c++/9/cwchar \
+  /usr/include/c++/9/cwctype \
+  /usr/include/c++/9/debug/assertions.h \
+  /usr/include/c++/9/debug/debug.h \
+  /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/alloc_traits.h \
+  /usr/include/c++/9/ext/atomicity.h \
+  /usr/include/c++/9/ext/new_allocator.h \
+  /usr/include/c++/9/ext/numeric_traits.h \
+  /usr/include/c++/9/ext/string_conversions.h \
+  /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/initializer_list \
+  /usr/include/c++/9/ios \
+  /usr/include/c++/9/iosfwd \
+  /usr/include/c++/9/istream \
+  /usr/include/c++/9/iterator \
+  /usr/include/c++/9/limits \
+  /usr/include/c++/9/math.h \
+  /usr/include/c++/9/new \
+  /usr/include/c++/9/ostream \
+  /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/stdlib.h \
   /usr/include/c++/9/streambuf \
@@ -1540,17 +1820,14 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/c++/9/tr1/poly_laguerre.tcc \
   /usr/include/c++/9/tr1/riemann_zeta.tcc \
   /usr/include/c++/9/tr1/special_function_util.h \
-  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
-  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
@@ -1650,9 +1927,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Image.cpp.o: _de
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -1672,8 +1947,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
@@ -1682,21 +1955,16 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   _deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/Shape.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -1710,22 +1978,30 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/specfun.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -1743,12 +2019,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cstddef \
+  /usr/include/c++/9/cmath \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -1756,23 +2033,41 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tr1/bessel_function.tcc \
+  /usr/include/c++/9/tr1/beta_function.tcc \
+  /usr/include/c++/9/tr1/ell_integral.tcc \
+  /usr/include/c++/9/tr1/exp_integral.tcc \
+  /usr/include/c++/9/tr1/gamma.tcc \
+  /usr/include/c++/9/tr1/hypergeometric.tcc \
+  /usr/include/c++/9/tr1/legendre_function.tcc \
+  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/9/tr1/poly_hermite.tcc \
+  /usr/include/c++/9/tr1/poly_laguerre.tcc \
+  /usr/include/c++/9/tr1/riemann_zeta.tcc \
+  /usr/include/c++/9/tr1/special_function_util.h \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
@@ -1781,6 +2076,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   /usr/include/features.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -1797,9 +2093,18 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
@@ -1867,23 +2172,17 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RectangleShape.c
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp.o: _deps/sfml-src/src/SFML/Graphics/RenderStates.cpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -1897,24 +2196,32 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
@@ -1924,10 +2231,14 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp
   /usr/include/c++/9/bits/stl_pair.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
@@ -1939,24 +2250,31 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderStates.cpp
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2051,60 +2369,53 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glsl.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glsl.inl \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
   _deps/sfml-src/include/SFML/Graphics/Shader.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
+  _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Err.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/Lock.hpp \
+  _deps/sfml-src/include/SFML/System/Mutex.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/System/Vector3.hpp \
   _deps/sfml-src/include/SFML/System/Vector3.inl \
   _deps/sfml-src/include/SFML/Window/Context.hpp \
+  _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
-  _deps/sfml-src/src/SFML/System/EnumArray.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -2114,10 +2425,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -2128,11 +2435,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
@@ -2140,21 +2444,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/std_function.h \
-  /usr/include/c++/9/bits/std_mutex.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -2164,10 +2460,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
@@ -2175,23 +2473,16 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_lock.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cmath \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -2200,48 +2491,29 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
   /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
+  /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
-  /usr/include/c++/9/mutex \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
   /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
   /usr/include/c++/9/system_error \
-  /usr/include/c++/9/tr1/bessel_function.tcc \
-  /usr/include/c++/9/tr1/beta_function.tcc \
-  /usr/include/c++/9/tr1/ell_integral.tcc \
-  /usr/include/c++/9/tr1/exp_integral.tcc \
-  /usr/include/c++/9/tr1/gamma.tcc \
-  /usr/include/c++/9/tr1/hypergeometric.tcc \
-  /usr/include/c++/9/tr1/legendre_function.tcc \
-  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/9/tr1/poly_hermite.tcc \
-  /usr/include/c++/9/tr1/poly_laguerre.tcc \
-  /usr/include/c++/9/tr1/riemann_zeta.tcc \
-  /usr/include/c++/9/tr1/special_function_util.h \
   /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
@@ -2252,10 +2524,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
-  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -2273,18 +2543,9 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
@@ -2343,9 +2604,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTarget.cpp
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -2359,28 +2618,24 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTexture.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Err.hpp \
-  _deps/sfml-src/include/SFML/System/Exception.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
+  _deps/sfml-src/include/SFML/Window/Context.hpp \
   _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
@@ -2390,23 +2645,17 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -2416,10 +2665,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -2427,14 +2672,10 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/c++/9/bits/hashtable_policy.h \
   /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
@@ -2442,50 +2683,44 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -2494,28 +2729,22 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -2526,11 +2755,11 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/c++/9/typeinfo \
   /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -2611,9 +2840,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -2623,15 +2850,18 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTexture.cp
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
+_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImpl.cpp.o: _deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.cpp \
+  _deps/sfml-src/include/SFML/Config.hpp \
+  _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  _deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.hpp \
+  /usr/include/stdc-predef.h
+
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.o: _deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.cpp \
   _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Err.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
-  _deps/sfml-src/include/SFML/System/Vector2.hpp \
-  _deps/sfml-src/include/SFML/System/Vector2.inl \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/Window/Context.hpp \
   _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
@@ -2641,240 +2871,38 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   _deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.hpp \
   _deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.hpp \
   _deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
-  /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
-  /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
-  /usr/include/c++/9/bits/algorithmfwd.h \
-  /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
-  /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/9/bits/basic_ios.h \
-  /usr/include/c++/9/bits/basic_ios.tcc \
-  /usr/include/c++/9/bits/basic_string.h \
-  /usr/include/c++/9/bits/basic_string.tcc \
-  /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
-  /usr/include/c++/9/bits/concept_check.h \
-  /usr/include/c++/9/bits/cpp_type_traits.h \
-  /usr/include/c++/9/bits/cxxabi_forced.h \
-  /usr/include/c++/9/bits/cxxabi_init_exception.h \
-  /usr/include/c++/9/bits/exception.h \
-  /usr/include/c++/9/bits/exception_defines.h \
-  /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
-  /usr/include/c++/9/bits/functexcept.h \
-  /usr/include/c++/9/bits/functional_hash.h \
-  /usr/include/c++/9/bits/hash_bytes.h \
-  /usr/include/c++/9/bits/invoke.h \
-  /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
-  /usr/include/c++/9/bits/locale_classes.h \
-  /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
-  /usr/include/c++/9/bits/locale_facets.h \
-  /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/9/bits/localefwd.h \
-  /usr/include/c++/9/bits/memoryfwd.h \
-  /usr/include/c++/9/bits/move.h \
-  /usr/include/c++/9/bits/nested_exception.h \
-  /usr/include/c++/9/bits/ostream.tcc \
-  /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
-  /usr/include/c++/9/bits/postypes.h \
-  /usr/include/c++/9/bits/predefined_ops.h \
-  /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
-  /usr/include/c++/9/bits/range_access.h \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
-  /usr/include/c++/9/bits/std_abs.h \
-  /usr/include/c++/9/bits/stl_algo.h \
-  /usr/include/c++/9/bits/stl_algobase.h \
-  /usr/include/c++/9/bits/stl_construct.h \
-  /usr/include/c++/9/bits/stl_function.h \
-  /usr/include/c++/9/bits/stl_heap.h \
-  /usr/include/c++/9/bits/stl_iterator.h \
-  /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/9/bits/stl_iterator_base_types.h \
-  /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/9/bits/stl_relops.h \
-  /usr/include/c++/9/bits/stl_tempbuf.h \
-  /usr/include/c++/9/bits/stl_uninitialized.h \
-  /usr/include/c++/9/bits/streambuf.tcc \
-  /usr/include/c++/9/bits/streambuf_iterator.h \
-  /usr/include/c++/9/bits/string_view.tcc \
-  /usr/include/c++/9/bits/stringfwd.h \
-  /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
-  /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cassert \
-  /usr/include/c++/9/cctype \
-  /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
-  /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstdint \
-  /usr/include/c++/9/cstdio \
-  /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
-  /usr/include/c++/9/cwchar \
-  /usr/include/c++/9/cwctype \
-  /usr/include/c++/9/debug/assertions.h \
-  /usr/include/c++/9/debug/debug.h \
-  /usr/include/c++/9/exception \
-  /usr/include/c++/9/ext/aligned_buffer.h \
-  /usr/include/c++/9/ext/alloc_traits.h \
-  /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
-  /usr/include/c++/9/ext/new_allocator.h \
-  /usr/include/c++/9/ext/numeric_traits.h \
-  /usr/include/c++/9/ext/string_conversions.h \
-  /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
-  /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
-  /usr/include/c++/9/ios \
-  /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
-  /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
-  /usr/include/c++/9/new \
-  /usr/include/c++/9/ostream \
-  /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
-  /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/stdexcept \
-  /usr/include/c++/9/streambuf \
-  /usr/include/c++/9/string \
-  /usr/include/c++/9/string_view \
-  /usr/include/c++/9/system_error \
-  /usr/include/c++/9/tuple \
-  /usr/include/c++/9/type_traits \
-  /usr/include/c++/9/typeinfo \
-  /usr/include/c++/9/utility \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplFBO.cpp.o: _deps/sfml-src/src/SFML/Graphics/RenderTextureImplFBO.cpp \
   _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
+  _deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Rect.inl \
+  _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
   _deps/sfml-src/include/SFML/System/Err.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/Lock.hpp \
+  _deps/sfml-src/include/SFML/System/Mutex.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/Window/Context.hpp \
@@ -2888,23 +2916,17 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -2914,10 +2936,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -2925,14 +2943,10 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/c++/9/bits/hashtable_policy.h \
   /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
@@ -2940,49 +2954,46 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
+  /usr/include/c++/9/bits/stl_multiset.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_set.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -2991,28 +3002,23 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/set \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -3023,11 +3029,11 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/c++/9/typeinfo \
   /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -3108,9 +3114,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -3125,8 +3129,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
@@ -3135,42 +3137,31 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderWindow.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Clock.hpp \
-  _deps/sfml-src/include/SFML/System/Err.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/String.hpp \
   _deps/sfml-src/include/SFML/System/String.inl \
   _deps/sfml-src/include/SFML/System/Time.hpp \
-  _deps/sfml-src/include/SFML/System/Time.inl \
   _deps/sfml-src/include/SFML/System/Utf.hpp \
   _deps/sfml-src/include/SFML/System/Utf.inl \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
-  _deps/sfml-src/include/SFML/System/Vector3.hpp \
-  _deps/sfml-src/include/SFML/System/Vector3.inl \
+  _deps/sfml-src/include/SFML/Window/Context.hpp \
   _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
-  _deps/sfml-src/include/SFML/Window/Event.hpp \
-  _deps/sfml-src/include/SFML/Window/Event.inl \
+  _deps/sfml-src/include/SFML/Window/Cursor.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  _deps/sfml-src/include/SFML/Window/Joystick.hpp \
-  _deps/sfml-src/include/SFML/Window/Keyboard.hpp \
-  _deps/sfml-src/include/SFML/Window/Mouse.hpp \
-  _deps/sfml-src/include/SFML/Window/Sensor.hpp \
   _deps/sfml-src/include/SFML/Window/VideoMode.hpp \
   _deps/sfml-src/include/SFML/Window/Vulkan.hpp \
   _deps/sfml-src/include/SFML/Window/Window.hpp \
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
-  _deps/sfml-src/include/SFML/Window/WindowBase.inl \
-  _deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+  _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
   _deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.hpp \
@@ -3178,17 +3169,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
@@ -3204,10 +3190,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -3230,18 +3212,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -3251,10 +3228,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/stream_iterator.h \
@@ -3267,12 +3246,9 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
   /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
@@ -3286,29 +3262,25 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -3319,7 +3291,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderWindow.cpp
   /usr/include/c++/9/typeinfo \
   /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
-  /usr/include/c++/9/variant \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -3422,44 +3393,40 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glsl.hpp \
   _deps/sfml-src/include/SFML/Graphics/Glsl.inl \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Shader.hpp \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
+  _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
   _deps/sfml-src/include/SFML/System/Err.hpp \
-  _deps/sfml-src/include/SFML/System/Exception.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/InputStream.hpp \
+  _deps/sfml-src/include/SFML/System/Lock.hpp \
+  _deps/sfml-src/include/SFML/System/Mutex.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/System/Vector3.hpp \
   _deps/sfml-src/include/SFML/System/Vector3.inl \
+  _deps/sfml-src/include/SFML/Window/Context.hpp \
+  _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
-  _deps/sfml-src/src/SFML/System/Utils.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
@@ -3475,10 +3442,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
@@ -3490,11 +3453,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
@@ -3502,18 +3462,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -3523,10 +3478,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
@@ -3534,21 +3491,15 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -3557,29 +3508,24 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
   /usr/include/c++/9/fstream \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -3595,7 +3541,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -3678,9 +3623,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shader.cpp.o: _d
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -3694,27 +3637,23 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.o: _de
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
   _deps/sfml-src/include/SFML/Graphics/Shape.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
@@ -3722,24 +3661,15 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.o: _de
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/9/bits/basic_ios.h \
-  /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -3749,43 +3679,24 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.o: _de
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
   /usr/include/c++/9/bits/hashtable.h \
   /usr/include/c++/9/bits/hashtable_policy.h \
   /usr/include/c++/9/bits/invoke.h \
-  /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
-  /usr/include/c++/9/bits/locale_classes.h \
-  /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
-  /usr/include/c++/9/bits/locale_facets.h \
-  /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
   /usr/include/c++/9/bits/node_handle.h \
-  /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
+  /usr/include/c++/9/bits/specfun.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
@@ -3798,330 +3709,46 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Shape.cpp.o: _de
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
-  /usr/include/c++/9/bits/streambuf.tcc \
-  /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
-  /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
-  /usr/include/c++/9/cstdint \
-  /usr/include/c++/9/cstdio \
-  /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
-  /usr/include/c++/9/cwchar \
-  /usr/include/c++/9/cwctype \
-  /usr/include/c++/9/debug/assertions.h \
-  /usr/include/c++/9/debug/debug.h \
-  /usr/include/c++/9/exception \
-  /usr/include/c++/9/ext/aligned_buffer.h \
-  /usr/include/c++/9/ext/alloc_traits.h \
-  /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
-  /usr/include/c++/9/ext/new_allocator.h \
-  /usr/include/c++/9/ext/numeric_traits.h \
-  /usr/include/c++/9/ext/string_conversions.h \
-  /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
-  /usr/include/c++/9/functional \
-  /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
-  /usr/include/c++/9/ios \
-  /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
-  /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
-  /usr/include/c++/9/new \
-  /usr/include/c++/9/optional \
-  /usr/include/c++/9/ostream \
-  /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
-  /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/stdexcept \
-  /usr/include/c++/9/streambuf \
-  /usr/include/c++/9/string \
-  /usr/include/c++/9/string_view \
-  /usr/include/c++/9/system_error \
-  /usr/include/c++/9/tuple \
-  /usr/include/c++/9/type_traits \
-  /usr/include/c++/9/typeinfo \
-  /usr/include/c++/9/unordered_map \
-  /usr/include/c++/9/utility \
-  /usr/include/c++/9/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
-
-_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: _deps/sfml-src/src/SFML/Graphics/Sprite.cpp \
-  _deps/sfml-src/include/SFML/Config.hpp \
-  _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Export.hpp \
-  _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Rect.inl \
-  _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
-  _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
-  _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
-  _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
-  _deps/sfml-src/include/SFML/System/Vector2.hpp \
-  _deps/sfml-src/include/SFML/System/Vector2.inl \
-  _deps/sfml-src/include/SFML/Window/Export.hpp \
-  _deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
-  /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
-  /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
-  /usr/include/c++/9/bits/algorithmfwd.h \
-  /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
-  /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/9/bits/basic_ios.h \
-  /usr/include/c++/9/bits/basic_ios.tcc \
-  /usr/include/c++/9/bits/basic_string.h \
-  /usr/include/c++/9/bits/basic_string.tcc \
-  /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
-  /usr/include/c++/9/bits/concept_check.h \
-  /usr/include/c++/9/bits/cpp_type_traits.h \
-  /usr/include/c++/9/bits/cxxabi_forced.h \
-  /usr/include/c++/9/bits/cxxabi_init_exception.h \
-  /usr/include/c++/9/bits/enable_special_members.h \
-  /usr/include/c++/9/bits/exception.h \
-  /usr/include/c++/9/bits/exception_defines.h \
-  /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
-  /usr/include/c++/9/bits/functexcept.h \
-  /usr/include/c++/9/bits/functional_hash.h \
-  /usr/include/c++/9/bits/hash_bytes.h \
-  /usr/include/c++/9/bits/invoke.h \
-  /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
-  /usr/include/c++/9/bits/locale_classes.h \
-  /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
-  /usr/include/c++/9/bits/locale_facets.h \
-  /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/9/bits/localefwd.h \
-  /usr/include/c++/9/bits/memoryfwd.h \
-  /usr/include/c++/9/bits/move.h \
-  /usr/include/c++/9/bits/nested_exception.h \
-  /usr/include/c++/9/bits/ostream.tcc \
-  /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
-  /usr/include/c++/9/bits/postypes.h \
-  /usr/include/c++/9/bits/predefined_ops.h \
-  /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
-  /usr/include/c++/9/bits/range_access.h \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/bits/sstream.tcc \
-  /usr/include/c++/9/bits/std_abs.h \
-  /usr/include/c++/9/bits/stl_algo.h \
-  /usr/include/c++/9/bits/stl_algobase.h \
-  /usr/include/c++/9/bits/stl_construct.h \
-  /usr/include/c++/9/bits/stl_function.h \
-  /usr/include/c++/9/bits/stl_heap.h \
-  /usr/include/c++/9/bits/stl_iterator.h \
-  /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/9/bits/stl_iterator_base_types.h \
-  /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/9/bits/stl_relops.h \
-  /usr/include/c++/9/bits/stl_tempbuf.h \
-  /usr/include/c++/9/bits/stl_uninitialized.h \
-  /usr/include/c++/9/bits/streambuf.tcc \
-  /usr/include/c++/9/bits/streambuf_iterator.h \
-  /usr/include/c++/9/bits/string_view.tcc \
-  /usr/include/c++/9/bits/stringfwd.h \
-  /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
-  /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cassert \
-  /usr/include/c++/9/cctype \
-  /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
   /usr/include/c++/9/cmath \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
-  /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
-  /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
-  /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
-  /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
-  /usr/include/c++/9/system_error \
   /usr/include/c++/9/tr1/bessel_function.tcc \
   /usr/include/c++/9/tr1/beta_function.tcc \
   /usr/include/c++/9/tr1/ell_integral.tcc \
@@ -4137,12 +3764,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: _d
   /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/math.h \
@@ -4154,7 +3782,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: _d
   /usr/include/stdlib.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
-  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -4221,21 +3848,15 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: _d
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -4245,39 +3866,237 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: _d
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
-_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/StencilMode.cpp.o: _deps/sfml-src/src/SFML/Graphics/StencilMode.cpp \
-  _deps/sfml-src/include/SFML/Config.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Export.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
-  /usr/include/stdc-predef.h
-
-_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _deps/sfml-src/src/SFML/Graphics/Text.cpp \
+_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Sprite.cpp.o: _deps/sfml-src/src/SFML/Graphics/Sprite.cpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Font.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Glyph.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Sprite.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
+  _deps/sfml-src/include/SFML/Graphics/View.hpp \
+  _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  _deps/sfml-src/include/SFML/System/Vector2.hpp \
+  _deps/sfml-src/include/SFML/System/Vector2.inl \
+  _deps/sfml-src/include/SFML/Window/Export.hpp \
+  _deps/sfml-src/include/SFML/Window/GlResource.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/backward/binders.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/alloc_traits.h \
+  /usr/include/c++/9/bits/allocator.h \
+  /usr/include/c++/9/bits/basic_string.h \
+  /usr/include/c++/9/bits/basic_string.tcc \
+  /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/concept_check.h \
+  /usr/include/c++/9/bits/cpp_type_traits.h \
+  /usr/include/c++/9/bits/cxxabi_forced.h \
+  /usr/include/c++/9/bits/cxxabi_init_exception.h \
+  /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
+  /usr/include/c++/9/bits/exception.h \
+  /usr/include/c++/9/bits/exception_defines.h \
+  /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/functexcept.h \
+  /usr/include/c++/9/bits/functional_hash.h \
+  /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
+  /usr/include/c++/9/bits/localefwd.h \
+  /usr/include/c++/9/bits/memoryfwd.h \
+  /usr/include/c++/9/bits/move.h \
+  /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
+  /usr/include/c++/9/bits/ostream_insert.h \
+  /usr/include/c++/9/bits/postypes.h \
+  /usr/include/c++/9/bits/predefined_ops.h \
+  /usr/include/c++/9/bits/ptr_traits.h \
+  /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/stl_construct.h \
+  /usr/include/c++/9/bits/stl_function.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_iterator.h \
+  /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/string_view.tcc \
+  /usr/include/c++/9/bits/stringfwd.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  /usr/include/c++/9/cctype \
+  /usr/include/c++/9/cerrno \
+  /usr/include/c++/9/clocale \
+  /usr/include/c++/9/cstdint \
+  /usr/include/c++/9/cstdio \
+  /usr/include/c++/9/cstdlib \
+  /usr/include/c++/9/cwchar \
+  /usr/include/c++/9/debug/assertions.h \
+  /usr/include/c++/9/debug/debug.h \
+  /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
+  /usr/include/c++/9/ext/alloc_traits.h \
+  /usr/include/c++/9/ext/atomicity.h \
+  /usr/include/c++/9/ext/new_allocator.h \
+  /usr/include/c++/9/ext/numeric_traits.h \
+  /usr/include/c++/9/ext/string_conversions.h \
+  /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
+  /usr/include/c++/9/initializer_list \
+  /usr/include/c++/9/iosfwd \
+  /usr/include/c++/9/limits \
+  /usr/include/c++/9/new \
+  /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/9/pstl/pstl_config.h \
+  /usr/include/c++/9/stdexcept \
+  /usr/include/c++/9/string \
+  /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/type_traits \
+  /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
+
+_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _deps/sfml-src/src/SFML/Graphics/Text.cpp \
+  _deps/sfml-src/include/SFML/Config.hpp \
+  _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Font.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Glyph.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Image.hpp \
+  _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Rect.inl \
+  _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
+  _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
   _deps/sfml-src/include/SFML/Graphics/Text.hpp \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/String.hpp \
   _deps/sfml-src/include/SFML/System/String.inl \
   _deps/sfml-src/include/SFML/System/Utf.hpp \
@@ -4289,18 +4108,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _dep
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
@@ -4316,10 +4129,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _dep
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -4342,18 +4151,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _dep
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
@@ -4365,10 +4168,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _dep
   /usr/include/c++/9/bits/stl_iterator.h \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_tree.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/stream_iterator.h \
@@ -4381,14 +4186,10 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _dep
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
   /usr/include/c++/9/cmath \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -4401,31 +4202,25 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Text.cpp.o: _dep
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
   /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
+  /usr/include/c++/9/map \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
   /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -4560,45 +4355,35 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/Image.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Texture.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Clock.hpp \
   _deps/sfml-src/include/SFML/System/Err.hpp \
-  _deps/sfml-src/include/SFML/System/Exception.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/Lock.hpp \
+  _deps/sfml-src/include/SFML/System/Mutex.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/String.hpp \
   _deps/sfml-src/include/SFML/System/String.inl \
   _deps/sfml-src/include/SFML/System/Time.hpp \
-  _deps/sfml-src/include/SFML/System/Time.inl \
   _deps/sfml-src/include/SFML/System/Utf.hpp \
   _deps/sfml-src/include/SFML/System/Utf.inl \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
-  _deps/sfml-src/include/SFML/System/Vector3.hpp \
-  _deps/sfml-src/include/SFML/System/Vector3.inl \
   _deps/sfml-src/include/SFML/Window/Context.hpp \
   _deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
-  _deps/sfml-src/include/SFML/Window/Event.hpp \
-  _deps/sfml-src/include/SFML/Window/Event.inl \
+  _deps/sfml-src/include/SFML/Window/Cursor.hpp \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
   _deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  _deps/sfml-src/include/SFML/Window/Joystick.hpp \
-  _deps/sfml-src/include/SFML/Window/Keyboard.hpp \
-  _deps/sfml-src/include/SFML/Window/Mouse.hpp \
-  _deps/sfml-src/include/SFML/Window/Sensor.hpp \
+  _deps/sfml-src/include/SFML/Window/VideoMode.hpp \
   _deps/sfml-src/include/SFML/Window/Vulkan.hpp \
   _deps/sfml-src/include/SFML/Window/Window.hpp \
   _deps/sfml-src/include/SFML/Window/WindowBase.hpp \
-  _deps/sfml-src/include/SFML/Window/WindowBase.inl \
-  _deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
   _deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+  _deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
   _deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
@@ -4608,16 +4393,10 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/assert.h \
   /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/atomic \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
@@ -4633,10 +4412,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -4659,17 +4434,11 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
@@ -4682,7 +4451,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
@@ -4700,9 +4468,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
+  /usr/include/c++/9/climits \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
   /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
@@ -4717,31 +4484,24 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
   /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/iterator \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
   /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -4752,14 +4512,15 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/c++/9/typeinfo \
   /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
-  /usr/include/c++/9/variant \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
   /usr/include/libintl.h \
+  /usr/include/limits.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
@@ -4781,8 +4542,11 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
@@ -4826,11 +4590,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -4849,231 +4615,34 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.o: _
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h
 
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/TextureSaver.cpp.o: _deps/sfml-src/src/SFML/Graphics/TextureSaver.cpp \
   _deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
   _deps/sfml-src/include/SFML/Config.hpp \
-  _deps/sfml-src/include/SFML/System/Err.hpp \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
   _deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
   _deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bits/algorithmfwd.h \
-  /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
-  /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/basic_ios.h \
-  /usr/include/c++/9/bits/basic_ios.tcc \
-  /usr/include/c++/9/bits/basic_string.h \
-  /usr/include/c++/9/bits/basic_string.tcc \
-  /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
-  /usr/include/c++/9/bits/concept_check.h \
-  /usr/include/c++/9/bits/cpp_type_traits.h \
-  /usr/include/c++/9/bits/cxxabi_forced.h \
-  /usr/include/c++/9/bits/cxxabi_init_exception.h \
-  /usr/include/c++/9/bits/exception.h \
-  /usr/include/c++/9/bits/exception_defines.h \
-  /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
-  /usr/include/c++/9/bits/functexcept.h \
-  /usr/include/c++/9/bits/functional_hash.h \
-  /usr/include/c++/9/bits/hash_bytes.h \
-  /usr/include/c++/9/bits/invoke.h \
-  /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
-  /usr/include/c++/9/bits/locale_classes.h \
-  /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
-  /usr/include/c++/9/bits/locale_facets.h \
-  /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/9/bits/localefwd.h \
-  /usr/include/c++/9/bits/memoryfwd.h \
-  /usr/include/c++/9/bits/move.h \
-  /usr/include/c++/9/bits/nested_exception.h \
-  /usr/include/c++/9/bits/ostream.tcc \
-  /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
-  /usr/include/c++/9/bits/postypes.h \
-  /usr/include/c++/9/bits/predefined_ops.h \
-  /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
-  /usr/include/c++/9/bits/range_access.h \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
-  /usr/include/c++/9/bits/std_abs.h \
-  /usr/include/c++/9/bits/stl_algo.h \
-  /usr/include/c++/9/bits/stl_algobase.h \
-  /usr/include/c++/9/bits/stl_construct.h \
-  /usr/include/c++/9/bits/stl_function.h \
-  /usr/include/c++/9/bits/stl_heap.h \
-  /usr/include/c++/9/bits/stl_iterator.h \
-  /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/9/bits/stl_iterator_base_types.h \
-  /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_relops.h \
-  /usr/include/c++/9/bits/stl_tempbuf.h \
-  /usr/include/c++/9/bits/streambuf.tcc \
-  /usr/include/c++/9/bits/streambuf_iterator.h \
-  /usr/include/c++/9/bits/string_view.tcc \
-  /usr/include/c++/9/bits/stringfwd.h \
-  /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
-  /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cctype \
-  /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
-  /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstdint \
-  /usr/include/c++/9/cstdio \
-  /usr/include/c++/9/cstdlib \
-  /usr/include/c++/9/ctime \
-  /usr/include/c++/9/cwchar \
-  /usr/include/c++/9/cwctype \
-  /usr/include/c++/9/debug/assertions.h \
-  /usr/include/c++/9/debug/debug.h \
-  /usr/include/c++/9/exception \
-  /usr/include/c++/9/ext/aligned_buffer.h \
-  /usr/include/c++/9/ext/alloc_traits.h \
-  /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
-  /usr/include/c++/9/ext/new_allocator.h \
-  /usr/include/c++/9/ext/numeric_traits.h \
-  /usr/include/c++/9/ext/string_conversions.h \
-  /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
-  /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
-  /usr/include/c++/9/ios \
-  /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
-  /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/new \
-  /usr/include/c++/9/ostream \
-  /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/stdexcept \
-  /usr/include/c++/9/streambuf \
-  /usr/include/c++/9/string \
-  /usr/include/c++/9/string_view \
-  /usr/include/c++/9/system_error \
-  /usr/include/c++/9/tuple \
-  /usr/include/c++/9/type_traits \
-  /usr/include/c++/9/typeinfo \
-  /usr/include/c++/9/utility \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o: _deps/sfml-src/src/SFML/Graphics/Transform.cpp \
@@ -5082,16 +4651,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o:
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -5105,25 +4670,33 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o:
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
   /usr/include/c++/9/bits/specfun.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
@@ -5133,15 +4706,18 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o:
   /usr/include/c++/9/bits/stl_pair.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
   /usr/include/c++/9/cmath \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -5149,17 +4725,21 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o:
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
@@ -5176,9 +4756,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transform.cpp.o:
   /usr/include/c++/9/tr1/poly_laguerre.tcc \
   /usr/include/c++/9/tr1/riemann_zeta.tcc \
   /usr/include/c++/9/tr1/special_function_util.h \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -5284,17 +4867,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cp
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Transformable.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -5308,25 +4887,33 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cp
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
   /usr/include/c++/9/bits/specfun.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
@@ -5336,15 +4923,18 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cp
   /usr/include/c++/9/bits/stl_pair.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
   /usr/include/c++/9/cmath \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -5352,17 +4942,21 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cp
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
@@ -5379,9 +4973,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cp
   /usr/include/c++/9/tr1/poly_laguerre.tcc \
   /usr/include/c++/9/tr1/riemann_zeta.tcc \
   /usr/include/c++/9/tr1/special_function_util.h \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -5481,12 +5078,19 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Transformable.cp
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h
 
+_deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Vertex.cpp.o: _deps/sfml-src/src/SFML/Graphics/Vertex.cpp \
+  _deps/sfml-src/include/SFML/Config.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
+  _deps/sfml-src/include/SFML/System/Vector2.hpp \
+  _deps/sfml-src/include/SFML/System/Vector2.inl \
+  /usr/include/stdc-predef.h
+
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.o: _deps/sfml-src/src/SFML/Graphics/VertexArray.cpp \
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
@@ -5494,21 +5098,18 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -5522,22 +5123,29 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -5555,12 +5163,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/cassert \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -5568,23 +5176,29 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexArray.cpp.
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
   /usr/include/c++/9/string_view \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
   /usr/include/c++/9/vector \
   /usr/include/ctype.h \
@@ -5681,8 +5295,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   _deps/sfml-src/include/SFML/Config.hpp \
   _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Color.inl \
-  _deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
   _deps/sfml-src/include/SFML/Graphics/Drawable.hpp \
   _deps/sfml-src/include/SFML/Graphics/Export.hpp \
   _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp \
@@ -5690,16 +5302,15 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/RenderStates.hpp \
   _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp \
-  _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/Vertex.hpp \
   _deps/sfml-src/include/SFML/Graphics/VertexBuffer.hpp \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
   _deps/sfml-src/include/SFML/System/Err.hpp \
   _deps/sfml-src/include/SFML/System/Export.hpp \
+  _deps/sfml-src/include/SFML/System/Lock.hpp \
+  _deps/sfml-src/include/SFML/System/Mutex.hpp \
+  _deps/sfml-src/include/SFML/System/NonCopyable.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   _deps/sfml-src/include/SFML/Window/Export.hpp \
@@ -5709,68 +5320,54 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
-  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
-  /usr/include/c++/9/bit \
   /usr/include/c++/9/bits/algorithmfwd.h \
   /usr/include/c++/9/bits/alloc_traits.h \
-  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
-  /usr/include/c++/9/bits/atomic_base.h \
-  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
-  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
-  /usr/include/c++/9/bits/fs_dir.h \
-  /usr/include/c++/9/bits/fs_fwd.h \
-  /usr/include/c++/9/bits/fs_ops.h \
-  /usr/include/c++/9/bits/fs_path.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
   /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/ios_base.h \
-  /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/locale_classes.h \
   /usr/include/c++/9/bits/locale_classes.tcc \
-  /usr/include/c++/9/bits/locale_conv.h \
   /usr/include/c++/9/bits/locale_facets.h \
   /usr/include/c++/9/bits/locale_facets.tcc \
-  /usr/include/c++/9/bits/locale_facets_nonio.h \
-  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/ostream_insert.h \
-  /usr/include/c++/9/bits/parse_numbers.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
-  /usr/include/c++/9/bits/quoted_string.h \
   /usr/include/c++/9/bits/range_access.h \
   /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/shared_ptr.h \
-  /usr/include/c++/9/bits/shared_ptr_atomic.h \
-  /usr/include/c++/9/bits/shared_ptr_base.h \
-  /usr/include/c++/9/bits/sstream.tcc \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
@@ -5778,29 +5375,25 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
-  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/bits/unique_ptr.h \
+  /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
-  /usr/include/c++/9/chrono \
   /usr/include/c++/9/clocale \
-  /usr/include/c++/9/codecvt \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
   /usr/include/c++/9/cstring \
-  /usr/include/c++/9/ctime \
   /usr/include/c++/9/cwchar \
   /usr/include/c++/9/cwctype \
   /usr/include/c++/9/debug/assertions.h \
@@ -5809,28 +5402,21 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
-  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
-  /usr/include/c++/9/filesystem \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
-  /usr/include/c++/9/iomanip \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
-  /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
-  /usr/include/c++/9/locale \
-  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/pstl/execution_defs.h \
-  /usr/include/c++/9/pstl/glue_memory_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
-  /usr/include/c++/9/ratio \
-  /usr/include/c++/9/sstream \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/streambuf \
   /usr/include/c++/9/string \
@@ -5839,12 +5425,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -5927,9 +5514,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/VertexBuffer.cpp
   /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -5945,17 +5530,13 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: _dep
   _deps/sfml-src/include/SFML/Graphics/Rect.hpp \
   _deps/sfml-src/include/SFML/Graphics/Rect.inl \
   _deps/sfml-src/include/SFML/Graphics/Transform.hpp \
-  _deps/sfml-src/include/SFML/Graphics/Transform.inl \
   _deps/sfml-src/include/SFML/Graphics/View.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.hpp \
-  _deps/sfml-src/include/SFML/System/Angle.inl \
-  _deps/sfml-src/include/SFML/System/Export.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.hpp \
   _deps/sfml-src/include/SFML/System/Vector2.inl \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
+  /usr/include/c++/9/algorithm \
   /usr/include/c++/9/array \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/algorithmfwd.h \
@@ -5969,25 +5550,33 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: _dep
   /usr/include/c++/9/bits/cxxabi_forced.h \
   /usr/include/c++/9/bits/cxxabi_init_exception.h \
   /usr/include/c++/9/bits/enable_special_members.h \
+  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
+  /usr/include/c++/9/bits/hashtable.h \
+  /usr/include/c++/9/bits/hashtable_policy.h \
+  /usr/include/c++/9/bits/invoke.h \
   /usr/include/c++/9/bits/localefwd.h \
   /usr/include/c++/9/bits/memoryfwd.h \
   /usr/include/c++/9/bits/move.h \
   /usr/include/c++/9/bits/nested_exception.h \
+  /usr/include/c++/9/bits/node_handle.h \
   /usr/include/c++/9/bits/ostream_insert.h \
   /usr/include/c++/9/bits/postypes.h \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
   /usr/include/c++/9/bits/specfun.h \
   /usr/include/c++/9/bits/std_abs.h \
+  /usr/include/c++/9/bits/std_function.h \
   /usr/include/c++/9/bits/stl_algo.h \
   /usr/include/c++/9/bits/stl_algobase.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_function.h \
   /usr/include/c++/9/bits/stl_heap.h \
@@ -5997,15 +5586,18 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: _dep
   /usr/include/c++/9/bits/stl_pair.h \
   /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/string_view.tcc \
   /usr/include/c++/9/bits/stringfwd.h \
   /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/cassert \
+  /usr/include/c++/9/bits/unordered_map.h \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/vector.tcc \
   /usr/include/c++/9/cctype \
   /usr/include/c++/9/cerrno \
   /usr/include/c++/9/clocale \
   /usr/include/c++/9/cmath \
-  /usr/include/c++/9/cstddef \
   /usr/include/c++/9/cstdint \
   /usr/include/c++/9/cstdio \
   /usr/include/c++/9/cstdlib \
@@ -6013,17 +5605,21 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: _dep
   /usr/include/c++/9/debug/assertions.h \
   /usr/include/c++/9/debug/debug.h \
   /usr/include/c++/9/exception \
+  /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/functional \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/limits \
   /usr/include/c++/9/new \
   /usr/include/c++/9/optional \
+  /usr/include/c++/9/pstl/execution_defs.h \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
   /usr/include/c++/9/pstl/pstl_config.h \
   /usr/include/c++/9/stdexcept \
   /usr/include/c++/9/string \
@@ -6040,9 +5636,12 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: _dep
   /usr/include/c++/9/tr1/poly_laguerre.tcc \
   /usr/include/c++/9/tr1/riemann_zeta.tcc \
   /usr/include/c++/9/tr1/special_function_util.h \
+  /usr/include/c++/9/tuple \
   /usr/include/c++/9/type_traits \
   /usr/include/c++/9/typeinfo \
+  /usr/include/c++/9/unordered_map \
   /usr/include/c++/9/utility \
+  /usr/include/c++/9/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -6145,7 +5744,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/View.cpp.o: _dep
 
 _deps/sfml-src/src/SFML/Graphics/VertexArray.cpp:
 
-/usr/include/c++/9/atomic:
+_deps/sfml-src/src/SFML/Graphics/Vertex.cpp:
 
 _deps/sfml-src/src/SFML/Graphics/Texture.cpp:
 
@@ -6155,17 +5754,25 @@ _deps/sfml-src/src/SFML/Graphics/Sprite.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
 
-_deps/sfml-src/src/SFML/Graphics/StencilMode.cpp:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
 
 /usr/include/c++/9/bits/fstream.tcc:
 
 _deps/sfml-src/src/SFML/Graphics/Shader.cpp:
 
-/usr/include/c++/9/iterator:
+/usr/include/libintl.h:
 
-/usr/include/c++/9/bits/stream_iterator.h:
+/usr/include/c++/9/locale:
+
+/usr/include/c++/9/ctime:
+
+/usr/include/c++/9/bits/unique_ptr.h:
+
+/usr/include/c++/9/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/9/fstream:
+
+/usr/include/c++/9/bits/locale_conv.h:
 
 _deps/sfml-src/include/SFML/Graphics/Sprite.hpp:
 
@@ -6177,35 +5784,33 @@ _deps/sfml-src/include/SFML/Window/Vulkan.hpp:
 
 _deps/sfml-src/include/SFML/Window/VideoMode.hpp:
 
-_deps/sfml-src/include/SFML/Window/Sensor.hpp:
-
-_deps/sfml-src/include/SFML/Window/Mouse.hpp:
-
-_deps/sfml-src/include/SFML/Window/Keyboard.hpp:
-
-_deps/sfml-src/include/SFML/Window/Joystick.hpp:
-
-_deps/sfml-src/include/SFML/Window/Event.inl:
-
-_deps/sfml-src/include/SFML/Window/Event.hpp:
-
 _deps/sfml-src/include/SFML/System/Utf.inl:
 
 _deps/sfml-src/include/SFML/System/Utf.hpp:
 
-_deps/sfml-src/include/SFML/System/Time.inl:
+/usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h:
 
-_deps/sfml-src/include/SFML/System/String.hpp:
+_deps/sfml-src/include/SFML/System/String.inl:
 
 _deps/sfml-src/include/SFML/System/Clock.hpp:
 
 _deps/sfml-src/src/SFML/Graphics/RenderWindow.cpp:
 
+/usr/include/c++/9/set:
+
+/usr/include/c++/9/bits/stl_multiset.h:
+
 _deps/sfml-src/src/SFML/Graphics/RenderTextureImplFBO.cpp:
+
+_deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.cpp:
 
 _deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.hpp:
 
-_deps/sfml-src/src/SFML/System/EnumArray.hpp:
+/usr/include/c++/9/iostream:
+
+_deps/sfml-src/include/SFML/System/Mutex.hpp:
+
+_deps/sfml-src/include/SFML/System/Lock.hpp:
 
 _deps/sfml-src/include/SFML/Graphics/View.hpp:
 
@@ -6215,6 +5820,8 @@ _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp:
 
 _deps/sfml-src/src/SFML/Graphics/RenderTarget.cpp:
 
+_deps/sfml-src/src/SFML/Graphics/RenderStates.cpp:
+
 _deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/mm_malloc.h:
@@ -6223,29 +5830,39 @@ _deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp:
 
 /usr/include/c++/9/math.h:
 
+/usr/include/c++/9/iterator:
+
+/usr/include/c++/9/istream:
+
+/usr/include/c++/9/bits/stream_iterator.h:
+
+/usr/include/assert.h:
+
 _deps/sfml-src/extlibs/headers/stb_image/stb_image_write.h:
 
-_deps/sfml-src/src/SFML/Graphics/Image.cpp:
+_deps/sfml-src/include/SFML/System/String.hpp:
 
-/usr/include/c++/9/pstl/glue_algorithm_defs.h:
+_deps/sfml-src/src/SFML/Graphics/ImageLoader.cpp:
+
+_deps/sfml-src/src/SFML/Graphics/ImageLoader.hpp:
+
+_deps/sfml-src/src/SFML/Graphics/Image.cpp:
 
 _deps/sfml-src/include/SFML/System/Vector3.inl:
 
 _deps/sfml-src/include/SFML/System/Vector3.hpp:
 
+_deps/sfml-src/include/SFML/Graphics/Glsl.inl:
+
 _deps/sfml-src/include/SFML/Graphics/Glsl.hpp:
 
 _deps/sfml-src/src/SFML/Graphics/Glsl.cpp:
-
-_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp:
 
 _deps/sfml-src/src/SFML/Graphics/GLCheck.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
 
-_deps/sfml-src/include/SFML/System/String.inl:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h:
+/usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h:
 
 _deps/sfml-src/src/SFML/Graphics/View.cpp:
 
@@ -6259,23 +5876,11 @@ _deps/sfml-src/src/SFML/Graphics/VertexBuffer.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
 _deps/sfml-src/src/SFML/Graphics/GLExtensions.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/strings.h:
 
@@ -6283,13 +5888,15 @@ _deps/sfml-src/src/SFML/Graphics/GLExtensions.cpp:
 
 /usr/include/setjmp.h:
 
-/usr/include/linux/limits.h:
+_deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.cpp:
 
-/usr/include/libintl.h:
+/usr/include/linux/limits.h:
 
 _deps/sfml-src/src/SFML/Graphics/RenderTexture.cpp:
 
 /usr/include/freetype2/freetype/ftmoderr.h:
+
+/usr/include/freetype2/freetype/ftimage.h:
 
 /usr/include/freetype2/freetype/ftcolor.h:
 
@@ -6305,71 +5912,23 @@ _deps/sfml-src/include/SFML/Graphics/Text.hpp:
 
 /usr/include/freetype2/freetype/config/ftheader.h:
 
-/usr/include/c++/9/tr1/special_function_util.h:
-
-/usr/include/c++/9/tr1/poly_hermite.tcc:
-
-/usr/include/c++/9/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/9/tr1/gamma.tcc:
-
-/usr/include/c++/9/tr1/exp_integral.tcc:
-
-/usr/include/c++/9/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/9/tr1/ell_integral.tcc:
-
-/usr/include/freetype2/freetype/ftstroke.h:
-
-/usr/include/c++/9/tr1/bessel_function.tcc:
-
 /usr/include/c++/9/system_error:
-
-/usr/include/c++/9/variant:
 
 /usr/include/c++/9/stdlib.h:
 
-/usr/include/c++/9/ratio:
-
 /usr/include/c++/9/ostream:
 
-/usr/include/c++/9/locale:
+/usr/include/c++/9/map:
 
-/usr/include/c++/9/istream:
-
-_deps/sfml-src/src/SFML/Graphics/RenderStates.cpp:
-
-/usr/include/c++/9/ext/concurrence.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/c++/9/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-_deps/sfml-src/include/SFML/System/Angle.hpp:
-
-_deps/sfml-src/src/SFML/Graphics/Transform.cpp:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/freetype2/freetype/config/ftstdlib.h:
-
-/usr/include/c++/9/utility:
-
-/usr/include/freetype2/freetype/config/ftconfig.h:
-
-_deps/sfml-src/include/SFML/Config.hpp:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
+/usr/include/c++/9/cwctype:
 
 /usr/include/c++/9/type_traits:
 
 /usr/include/c++/9/bits/stl_algo.h:
+
+/usr/include/c++/9/backward/binders.h:
+
+/usr/include/c++/9/bits/streambuf.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h:
 
@@ -6377,11 +5936,25 @@ _deps/sfml-src/include/SFML/Config.hpp:
 
 /usr/include/c++/9/debug/assertions.h:
 
+_deps/sfml-src/include/SFML/Window/Cursor.hpp:
+
 _deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/c++/9/stdexcept:
+
+/usr/include/c++/9/tr1/ell_integral.tcc:
+
+/usr/include/c++/9/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/9/tr1/poly_hermite.tcc:
+
+/usr/include/c++/9/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/9/bits/locale_facets.tcc:
 
 /usr/include/c++/9/iosfwd:
 
@@ -6389,15 +5962,9 @@ _deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.hpp:
 
 /usr/include/c++/9/initializer_list:
 
-_deps/sfml-src/include/SFML/Graphics/Transform.inl:
-
-/usr/include/c++/9/filesystem:
-
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/9/vector:
 
 /usr/include/c++/9/ext/type_traits.h:
 
@@ -6407,27 +5974,19 @@ _deps/sfml-src/include/SFML/Graphics/Transform.inl:
 
 /usr/include/asm-generic/errno-base.h:
 
-_deps/sfml-src/include/SFML/Graphics/Rect.inl:
-
-/usr/include/stdio.h:
-
-_deps/sfml-src/include/SFML/Graphics/Texture.hpp:
-
 _deps/sfml-src/src/SFML/Graphics/Transformable.cpp:
 
 /usr/include/c++/9/ext/numeric_traits.h:
 
-_deps/sfml-src/include/SFML/Window/WindowBase.inl:
+/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
 
 _deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/9/bits/messages_members.h:
-
 _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp:
 
-/usr/include/c++/9/bits/std_mutex.h:
-
 /usr/include/c++/9/ext/new_allocator.h:
+
+/usr/include/c++/9/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/9/ext/atomicity.h:
 
@@ -6435,9 +5994,25 @@ _deps/sfml-src/include/SFML/Graphics/BlendMode.hpp:
 
 /usr/include/c++/9/cwchar:
 
+/usr/include/c++/9/tr1/gamma.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
 /usr/include/freetype2/freetype/ftglyph.h:
 
 /usr/include/c++/9/ext/alloc_traits.h:
+
+_deps/sfml-src/src/SFML/Graphics/RenderTextureImplFBO.hpp:
+
+/usr/include/limits.h:
+
+/usr/include/c++/9/bits/cxxabi_forced.h:
+
+/usr/include/c++/9/limits:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+_deps/sfml-src/include/SFML/Graphics/Glyph.hpp:
 
 /usr/include/alloca.h:
 
@@ -6453,17 +6028,11 @@ _deps/sfml-src/src/SFML/Graphics/Shape.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/c++/9/fstream:
-
-/usr/include/c++/9/bits/locale_conv.h:
-
-/usr/include/c++/9/bits/streambuf.tcc:
-
-/usr/include/c++/9/memory:
-
-/usr/include/c++/9/cerrno:
+/usr/include/c++/9/cmath:
 
 /usr/include/c++/9/bits/vector.tcc:
+
+/usr/include/c++/9/bits/erase_if.h:
 
 /usr/include/c++/9/streambuf:
 
@@ -6471,33 +6040,21 @@ _deps/sfml-src/src/SFML/Graphics/Shape.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
 
-/usr/include/c++/9/bits/erase_if.h:
-
-_deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.cpp:
-
-/usr/include/c++/9/bits/fs_fwd.h:
-
-/usr/include/c++/9/cmath:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/c++/9/climits:
 
 _deps/sfml-src/src/SFML/Graphics/RectangleShape.cpp:
 
 /usr/include/c++/9/bits/uniform_int_dist.h:
 
-/usr/include/c++/9/cwctype:
+/usr/include/c++/9/pstl/pstl_config.h:
+
+/usr/include/c++/9/cassert:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/pthread.h:
 
-/usr/include/c++/9/cstdint:
-
-/usr/include/c++/9/bits/stl_vector.h:
-
 /usr/include/c++/9/bits/stl_uninitialized.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/c++/9/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
 
@@ -6513,17 +6070,21 @@ _deps/sfml-src/include/SFML/Window/WindowHandle.hpp:
 
 /usr/include/c++/9/bits/stl_pair.h:
 
-/usr/include/c++/9/bits/unique_lock.h:
+/usr/include/c++/9/tr1/special_function_util.h:
 
-/usr/include/wchar.h:
+/usr/include/c++/9/bits/stl_set.h:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/freetype2/freetype/ftstroke.h:
 
-/usr/include/c++/9/bits/istream.tcc:
+/usr/include/c++/9/tr1/bessel_function.tcc:
 
 /usr/include/c++/9/bits/ostream.tcc:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
 /usr/include/c++/9/bits/stl_iterator.h:
+
+/usr/include/c++/9/bits/stl_map.h:
 
 /usr/include/c++/9/bits/functexcept.h:
 
@@ -6535,41 +6096,11 @@ _deps/sfml-src/src/SFML/Graphics/CircleShape.cpp:
 
 /usr/include/c++/9/bits/localefwd.h:
 
+/usr/include/c++/9/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
 _deps/sfml-src/include/SFML/System/Vector2.inl:
-
-/usr/include/linux/errno.h:
-
-_deps/sfml-src/include/SFML/System/Angle.inl:
-
-_deps/sfml-src/include/SFML/Graphics/Shader.hpp:
-
-/usr/include/c++/9/bits/basic_string.tcc:
-
-/usr/include/c++/9/cstddef:
-
-_deps/sfml-src/include/SFML/Graphics/VertexArray.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h:
-
-/usr/include/c++/9/unordered_map:
-
-/usr/include/c++/9/bits/refwrap.h:
-
-/usr/include/c++/9/clocale:
-
-/usr/include/c++/9/cctype:
-
-/usr/include/c++/9/bits/predefined_ops.h:
-
-/usr/include/c++/9/tuple:
-
-/usr/include/c++/9/bits/stl_function.h:
-
-_deps/sfml-src/include/SFML/Window/Export.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-_deps/sfml-src/include/SFML/Graphics/Transform.hpp:
 
 /usr/include/c++/9/bits/string_view.tcc:
 
@@ -6577,29 +6108,41 @@ _deps/sfml-src/include/SFML/Graphics/Vertex.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/c++/9/pstl/glue_memory_defs.h:
+/usr/include/c++/9/bits/uses_allocator.h:
 
-/usr/include/c++/9/bits/stl_iterator_base_types.h:
+/usr/include/c++/9/tr1/hypergeometric.tcc:
 
-/usr/include/stdc-predef.h:
+/usr/include/c++/9/bits/stl_bvector.h:
 
-/usr/include/errno.h:
-
-_deps/sfml-src/include/SFML/Graphics/Font.hpp:
-
-/usr/include/c++/9/bits/ptr_traits.h:
-
-/usr/include/c++/9/ctime:
+/usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 _deps/sfml-src/include/SFML/Graphics/Transformable.hpp:
 
-/usr/include/locale.h:
-
 _deps/sfml-src/extlibs/headers/stb_image/stb_image.h:
 
 /usr/include/c++/9/bits/hash_bytes.h:
+
+/usr/include/locale.h:
+
+_deps/sfml-src/include/SFML/System/Export.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/9/pstl/glue_algorithm_defs.h:
+
+_deps/sfml-src/include/SFML/Window/Export.hpp:
+
+_deps/sfml-src/include/SFML/Graphics/CircleShape.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/c++/9/algorithm:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/9/bits/functional_hash.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/mmintrin.h:
 
@@ -6607,21 +6150,11 @@ _deps/sfml-src/extlibs/headers/stb_image/stb_image.h:
 
 _deps/sfml-src/include/SFML/Graphics/Shape.hpp:
 
-_deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp:
-
 /usr/include/c++/9/cstdio:
 
 _deps/sfml-src/src/SFML/Graphics/BlendMode.cpp:
 
-/usr/include/c++/9/pstl/pstl_config.h:
-
-/usr/include/c++/9/cassert:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/c++/9/tr1/hypergeometric.tcc:
-
-/usr/include/c++/9/bits/uses_allocator.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 _deps/sfml-src/include/SFML/Graphics/Export.hpp:
 
@@ -6631,11 +6164,19 @@ _deps/sfml-src/include/SFML/Graphics/PrimitiveType.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
+/usr/include/c++/9/bits/stl_iterator_base_types.h:
+
+/usr/include/stdc-predef.h:
+
 /usr/include/c++/9/bits/stl_algobase.h:
 
 _deps/sfml-src/src/SFML/Graphics/TextureSaver.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/c++/9/bits/locale_facets_nonio.h:
+
+/usr/include/c++/9/new:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h:
 
@@ -6643,57 +6184,43 @@ _deps/sfml-src/include/SFML/Graphics/RenderWindow.hpp:
 
 /usr/include/c++/9/exception:
 
-_deps/sfml-src/include/SFML/Graphics/CircleShape.hpp:
+/usr/include/c++/9/bits/node_handle.h:
 
-/usr/include/c++/9/bits/stl_relops.h:
+_deps/sfml-src/include/SFML/Window/GlResource.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/errno.h:
 
-_deps/sfml-src/include/SFML/System/Export.hpp:
+_deps/sfml-src/include/SFML/Graphics/Font.hpp:
 
-/usr/include/c++/9/bits/algorithmfwd.h:
+_deps/sfml-src/include/SFML/Graphics/Color.hpp:
 
-/usr/include/ctype.h:
+/usr/include/c++/9/array:
 
-/usr/include/c++/9/bits/exception.h:
+/usr/include/c++/9/bits/ostream_insert.h:
 
-/usr/include/math.h:
+/usr/include/c++/9/debug/debug.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+_deps/sfml-src/include/SFML/Graphics/Drawable.hpp:
+
+_deps/sfml-src/include/SFML/Graphics/Rect.inl:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h:
+
+/usr/include/c++/9/clocale:
+
+/usr/include/c++/9/unordered_map:
+
+/usr/include/c++/9/bits/refwrap.h:
+
+/usr/include/c++/9/bits/hashtable.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
 
 /usr/include/c++/9/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-_deps/sfml-src/src/SFML/Graphics/RenderTextureImplFBO.hpp:
-
-/usr/include/limits.h:
-
-/usr/include/c++/9/bits/cxxabi_forced.h:
-
-/usr/include/c++/9/limits:
-
-/usr/include/c++/9/iomanip:
-
-/usr/include/c++/9/bits/functional_hash.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-_deps/sfml-src/include/SFML/Graphics/Drawable.hpp:
-
-/usr/include/c++/9/debug/debug.h:
-
-_deps/sfml-src/include/SFML/System/Exception.hpp:
-
-_deps/sfml-src/include/SFML/Graphics/Glyph.hpp:
-
-_deps/sfml-src/include/SFML/System/Vector2.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/c++/9/mutex:
 
 /usr/include/c++/9/bits/stringfwd.h:
 
@@ -6703,49 +6230,127 @@ _deps/sfml-src/include/SFML/Graphics/Rect.hpp:
 
 /usr/include/c++/9/bits/postypes.h:
 
-/usr/include/assert.h:
+/usr/include/c++/9/tr1/exp_integral.tcc:
 
-/usr/include/c++/9/array:
+/usr/include/c++/9/bits/ptr_traits.h:
 
-/usr/include/c++/9/bits/ostream_insert.h:
+_deps/sfml-src/include/SFML/Graphics/Shader.hpp:
 
-_deps/sfml-src/include/SFML/Graphics/Image.hpp:
+/usr/include/c++/9/cstddef:
 
-/usr/include/c++/9/bits/concept_check.h:
+_deps/sfml-src/include/SFML/Graphics/VertexArray.hpp:
 
-/usr/include/c++/9/bits/cpp_type_traits.h:
+/usr/include/c++/9/bits/basic_string.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/usr/include/freetype2/freetype/config/ftconfig.h:
 
-/usr/include/c++/9/bits/locale_facets.tcc:
+_deps/sfml-src/include/SFML/Config.hpp:
+
+/usr/include/freetype2/freetype/config/ftstdlib.h:
+
+/usr/include/c++/9/utility:
+
+/usr/include/c++/9/bits/stl_function.h:
+
+/usr/include/c++/9/tuple:
 
 /usr/include/freetype2/freetype/fterrors.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/usr/include/c++/9/ext/aligned_buffer.h:
+
+/usr/include/c++/9/cerrno:
+
 /usr/include/c++/9/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/9/bits/allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+/usr/include/c++/9/bits/hashtable_policy.h:
 
-/usr/include/c++/9/bits/fs_dir.h:
+/usr/include/c++/9/functional:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/c++/9/bits/invoke.h:
 
-/usr/include/c++/9/bits/memoryfwd.h:
+/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h:
 
 /usr/include/c++/9/bits/nested_exception.h:
+
+/usr/include/c++/9/bits/unordered_map.h:
+
+/usr/include/c++/9/cctype:
+
+/usr/include/c++/9/bits/predefined_ops.h:
+
+/usr/include/c++/9/bits/stl_relops.h:
+
+/usr/include/c++/9/bits/algorithmfwd.h:
+
+/usr/include/c++/9/ext/string_conversions.h:
+
+_deps/sfml-src/include/SFML/Graphics/RenderStates.hpp:
+
+/usr/include/c++/9/vector:
+
+/usr/include/c++/9/bits/exception.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/9/bits/codecvt.h:
+
+_deps/sfml-src/include/SFML/Window/Context.hpp:
+
+/usr/include/c++/9/bits/enable_special_members.h:
+
+/usr/include/features.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/9/bits/concept_check.h:
+
+_deps/sfml-src/include/SFML/Graphics/Image.hpp:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+_deps/sfml-src/src/SFML/Graphics/Transform.cpp:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/stdio.h:
+
+_deps/sfml-src/include/SFML/Graphics/Texture.hpp:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/9/bits/istream.tcc:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+_deps/sfml-src/include/SFML/Graphics/Transform.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/c++/9/bits/memoryfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/c++/9/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/freetype2/freetype/ftoutln.h:
-
-_deps/sfml-src/include/SFML/Graphics/Color.inl:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -6755,13 +6360,25 @@ _deps/sfml-src/include/SFML/Graphics/Color.inl:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/9/bits/basic_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/9/bits/exception_defines.h:
 
-/usr/include/c++/9/bits/atomic_base.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -6779,31 +6396,13 @@ _deps/sfml-src/include/SFML/Graphics/Color.inl:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+/usr/include/c++/9/bits/basic_ios.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/usr/include/c++/9/typeinfo:
 
-/usr/include/c++/9/bits/basic_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/c++/9/bits/unordered_map.h:
-
-/usr/include/c++/9/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/9/bits/shared_ptr_atomic.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/9/tr1/beta_function.tcc:
 
@@ -6811,7 +6410,29 @@ _deps/sfml-src/include/SFML/Graphics/Color.inl:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-_deps/sfml-src/src/SFML/System/Utils.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+_deps/sfml-src/include/SFML/System/Vector2.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+_deps/sfml-src/include/SFML/Window/WindowStyle.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/9/bits/stl_multimap.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/c++/9/bits/stl_iterator_base_funcs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/c++/9/pstl/execution_defs.h:
 
@@ -6837,31 +6458,19 @@ _deps/sfml-src/include/SFML/Window/ContextSettings.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h:
 
-/usr/include/c++/9/bits/basic_ios.h:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
-
-_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h:
-
-_deps/sfml-src/include/SFML/Graphics/StencilMode.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
 
 /usr/include/c++/9/tr1/poly_laguerre.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
-
-/usr/include/c++/9/functional:
-
-/usr/include/c++/9/bits/invoke.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/math.h:
+
+_deps/sfml-src/src/SFML/Graphics/Color.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -6879,29 +6488,13 @@ _deps/sfml-src/include/SFML/System/Err.hpp:
 
 _deps/sfml-src/include/SFML/System/InputStream.hpp:
 
-/usr/include/c++/9/codecvt:
+_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h:
 
-_deps/sfml-src/include/SFML/Window/GlResource.hpp:
+/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
 
-/usr/include/c++/9/bits/node_handle.h:
+_deps/sfml-src/include/SFML/System/NonCopyable.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/9/backward/auto_ptr.h:
-
-/usr/include/c++/9/bit:
-
-_deps/sfml-src/include/SFML/Graphics/Glsl.inl:
-
-/usr/include/c++/9/bits/allocated_ptr.h:
-
-/usr/include/c++/9/sstream:
-
-/usr/include/c++/9/typeinfo:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/c++/9/bits/atomic_lockfree_defines.h:
+_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp:
 
 /usr/include/c++/9/bits/stl_heap.h:
 
@@ -6909,78 +6502,24 @@ _deps/sfml-src/include/SFML/Graphics/Glsl.inl:
 
 /usr/include/c++/9/bits/basic_ios.tcc:
 
-_deps/sfml-src/include/SFML/Window/Context.hpp:
-
-/usr/include/features.h:
-
-/usr/include/c++/9/bits/enable_special_members.h:
-
-/usr/include/c++/9/bits/codecvt.h:
-
-_deps/sfml-src/include/SFML/Graphics/Color.hpp:
-
-/usr/include/c++/9/bits/fs_ops.h:
-
-/usr/include/c++/9/bits/fs_path.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/c++/9/bits/hashtable.h:
-
-/usr/include/c++/9/bits/hashtable_policy.h:
-
 /usr/include/c++/9/bits/locale_classes.h:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
 /usr/include/freetype2/ft2build.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/c++/9/bits/locale_classes.tcc:
 
-/usr/include/c++/9/new:
+/usr/include/c++/9/cstdint:
 
-/usr/include/c++/9/bits/locale_facets_nonio.h:
+/usr/include/c++/9/bits/stl_vector.h:
 
-/usr/include/c++/9/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/9/bits/parse_numbers.h:
-
-_deps/sfml-src/include/SFML/Window/WindowEnums.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h:
-
-/usr/include/c++/9/bits/quoted_string.h:
-
-/usr/include/c++/9/backward/binders.h:
-
-/usr/include/c++/9/bits/shared_ptr.h:
-
-/usr/include/freetype2/freetype/ftimage.h:
-
-/usr/include/c++/9/bits/shared_ptr_base.h:
-
-/usr/include/c++/9/bits/sstream.tcc:
-
-/usr/include/c++/9/ext/string_conversions.h:
-
-_deps/sfml-src/include/SFML/Graphics/RenderStates.hpp:
-
-/usr/include/c++/9/bits/stl_raw_storage_iter.h:
+/usr/include/c++/9/bits/stl_tree.h:
 
 /usr/include/c++/9/bits/streambuf_iterator.h:
-
-/usr/include/c++/9/bits/unique_ptr.h:
-
-/usr/include/c++/9/algorithm:
-
-/usr/include/c++/9/chrono:
 
 _deps/sfml-src/include/SFML/System/Time.hpp:
 
 /usr/include/c++/9/cstring:
-
-/usr/include/c++/9/ext/aligned_buffer.h:
