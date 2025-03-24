@@ -8,10 +8,10 @@ This game is primary about the colonialisation of new scapes in further space, w
 Instructions to compile the Game
 
 <ol>
-    <li> Create build folder with: <code>mkdir -p build</code><li>
-    <li> Configure build: <code>cmake -DCMAKE_BUILD_TYPE=DEBUG ..</code><li>
-    <li> Build the Game: <code>make -j$(nproc)</code><li>
-    <li> Execute the program: <code>./build/bin/Escape-To-Eclipse</code><li>
-    <li> (Set permissions if needed): <code>chmod 777 ./build/bin/Escape-To-Eclipse</code><li>
+    <li> Create build folder with: <code>mkdir -p build</code></li>
+    <li> Configure build: <code>cmake -DCMAKE_BUILD_TYPE=DEBUG ..</code></li>
+    <li> Build the Game: <code>make -j$(nproc)</code></li>
+    <li> Execute the program: <code>./build/bin/Escape-To-Eclipse</code></li>
+    <li> (Set permissions if needed): <code>chmod 777 ./build/bin/Escape-To-Eclipse</code></li>
 </ol>
 
