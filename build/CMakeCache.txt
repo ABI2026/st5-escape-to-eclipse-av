@@ -468,9 +468,6 @@ SFML_GAME_LIB_BINARY_DIR:STATIC=/home/moritz-feik/Desktop/st5-escape-to-eclipse-
 //Value Computed by CMake
 SFML_GAME_LIB_IS_TOP_LEVEL:STATIC=OFF
 
-//Dependencies for the target
-SFML_GAME_LIB_LIB_DEPENDS:STATIC=general;sfml-window;general;sfml-system;general;sfml-graphics;
-
 //Value Computed by CMake
 SFML_GAME_LIB_SOURCE_DIR:STATIC=/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/lib
 

@@ -450,9 +450,7 @@ _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/clean:
 # Target rules for target lib/CMakeFiles/SFML_GAME_LIB.dir
 
 # All Build rule for target.
-lib/CMakeFiles/SFML_GAME_LIB.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
-lib/CMakeFiles/SFML_GAME_LIB.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
-lib/CMakeFiles/SFML_GAME_LIB.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+lib/CMakeFiles/SFML_GAME_LIB.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/SFML_GAME_LIB.dir/build.make lib/CMakeFiles/SFML_GAME_LIB.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/SFML_GAME_LIB.dir/build.make lib/CMakeFiles/SFML_GAME_LIB.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/CMakeFiles --progress-num=2,3 "Built target SFML_GAME_LIB"
@@ -460,7 +458,7 @@ lib/CMakeFiles/SFML_GAME_LIB.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFi
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/SFML_GAME_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/SFML_GAME_LIB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moritz-feik/Desktop/st5-escape-to-eclipse-av/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/SFML_GAME_LIB.dir/rule
