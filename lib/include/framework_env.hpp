@@ -9,6 +9,7 @@
 #include <SFML/Window.hpp>
 #include <functional>
 #include <memory>
+#include <array>
 
 template <typename T>
 using s_ptr = std::shared_ptr<T>;
