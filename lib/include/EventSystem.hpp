@@ -29,8 +29,6 @@ namespace GlobalEvents {
 		SubTypeHandler() = default;
 		~SubTypeHandler() = default;
 
-		//SubTypeHandler<EvtSubType>& operator=(SubTypeHandler<EvtSubType>& rh_obj) = default;
-
 		void addCallback(EvtSubType, ECallbackAttechment);
 		void addCallbackToMultiSet(EvtSubType, ECallbackAttechment);
 		void removeCallback(EvtSubType);
@@ -80,6 +78,8 @@ namespace GlobalEvents {
 		SubTypeHandler<sf::Mouse::Button> m_mouseButtonReleasedSTHandler;
 		EventCallMap<sf::Event::EventType> m_wrapperCallmap;
 		
+		sf::Vector2f m_currentMousePosition{};
+
 		template <typename EvtCallbackType>
 		SubTypeHandler<EvtCallbackType>* m_evaluateSubTypeHandler(sf::Event::EventType action) {
 			void* subtypehandler = nullptr;
