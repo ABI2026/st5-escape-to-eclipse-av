@@ -10,6 +10,7 @@
 #include <functional>
 #include <memory>
 #include <array>
+#include <cstdarg>
 
 template <typename T>
 using s_ptr = std::shared_ptr<T>;

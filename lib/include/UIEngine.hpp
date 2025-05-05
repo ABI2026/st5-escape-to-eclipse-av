@@ -2,7 +2,7 @@
 #define UI_ENGINE
 
 namespace UIEngine {
-    namespace UIConfig {
+    /*namespace UIConfig {
         typedef std::array<std::array<sf::Color, 2>, 3> accentColorArray;
         typedef struct GeneralTheme {
             private:
@@ -86,7 +86,7 @@ namespace UIEngine {
                 bool initSuccess = false;
                 GeneralTheme* m_currentUITheme;
         };
-    }
+    }*/
 }
 
 #endif UI_ENGINE

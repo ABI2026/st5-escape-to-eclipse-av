@@ -11,7 +11,7 @@ GlobalEvents::SubTypeHandler<EvtSubType>::SubTypeHandler(std::function<EvtSubTyp
 	: m_eventDeconstructor(eventDeconstructor) {};
 
 template <typename EvtSubType>
-void GlobalEvents::SubTypeHandler<EvtSubType>::addCallback(EvtSubType subtype, ECallbackAttechment callback) {
+void GlobalEvents::SubTypeHandler<EvtSubType>::addSingleCallback(EvtSubType subtype, ECallbackAttechment callback) {
 	this->m_callmap.insert(std::make_pair(subtype, callback));
 }
 
@@ -21,7 +21,7 @@ void GlobalEvents::SubTypeHandler<EvtSubType>::addCallbackToMultiSet(EvtSubType 
 }
 
 template <typename EvtSubType>
-void GlobalEvents::SubTypeHandler<EvtSubType>::removeCallback(EvtSubType subtype) {
+void GlobalEvents::SubTypeHandler<EvtSubType>::removeSingleCallback(EvtSubType subtype) {
 	this->m_callmap.erase(subtype);
 }
 
@@ -81,9 +81,31 @@ GlobalEvents::GlobalHandler::GlobalHandler(sf::RenderWindow* window)
 	this->m_wrapperCallmap.insert({ sf::Event::KeyReleased, [&](const sf::Event& ev) -> void { this->m_keyReleasedSTHandler.processEvents(ev); } });
 	this->m_wrapperCallmap.insert({ sf::Event::MouseButtonPressed, [&](const sf::Event& ev) -> void { this->m_mouseButtonPressedSTHandler.processEvents(ev); } });
 	this->m_wrapperCallmap.insert({ sf::Event::MouseButtonReleased, [&](const sf::Event& ev) -> void { this->m_mouseButtonReleasedSTHandler.processEvents(ev); } });
+
+	this->attachStandardWindowEventCallback(sf::Event::EventType::Closed, [&] (const sf::Event&) -> void {
+		this->m_window->close();
+	});
+	this->attachStandardWindowEventCallback(sf::Event::EventType::Resized, [&] (const sf::Event& evt) -> void {
+		sf::View newView = this->m_window->getDefaultView();
+		newView.setCenter(
+			(static_cast<float>(evt.size.height) / 2),
+			(static_cast<float>(evt.size.width) / 2)
+		);
+		newView.setSize(
+			static_cast<float>(evt.size.width),
+			static_cast<float>(evt.size.height)
+		);
+		this->m_window->setView(newView);
+	});
 }
 
 void GlobalEvents::GlobalHandler::pollAndExecuteEvents() {
+	for (auto& item : this->m_keyActionMap) {
+		item.second = GlobalEvents::UIEventAction::NONE;
+	}
+	for (auto& item : this->m_mouseButtonActionMap) {
+		item.second = GlobalEvents::UIEventAction::NONE;
+	}
 	sf::Event uniqueEvent{};
 	while (this->m_window->pollEvent(uniqueEvent)) {
 		if (this->m_wrapperCallmap.find(uniqueEvent.type) != this->m_wrapperCallmap.end()) {
@@ -99,14 +121,14 @@ void GlobalEvents::GlobalHandler::attachStandardWindowEventCallback(sf::Event::E
 	}
 }
 
-void GlobalEvents::GlobalHandler::attachKeyCallback(sf::Event::EventType specificAction, sf::Keyboard::Key key, ECallbackAttechment callback) {
+void GlobalEvents::GlobalHandler::m_attachSingleKeyCallback(sf::Event::EventType specificAction, sf::Keyboard::Key key, ECallbackAttechment callback) {
 	auto* subtypehandler = this->m_evaluateSubTypeHandler<sf::Keyboard::Key>(specificAction);
-	subtypehandler->addCallback(key, callback);
+	subtypehandler->addSingleCallback(key, callback);
 }
 
-void GlobalEvents::GlobalHandler::attachMouseButtonCallback(sf::Event::EventType specificAction, sf::Mouse::Button btn, ECallbackAttechment callback) {
+void GlobalEvents::GlobalHandler::m_attachSingleMouseButtonCallback(sf::Event::EventType specificAction, sf::Mouse::Button btn, ECallbackAttechment callback) {
 	auto* subtypehandler = this->m_evaluateSubTypeHandler<sf::Mouse::Button>(specificAction);
-	subtypehandler->addCallback(btn, callback);
+	subtypehandler->addSingleCallback(btn, callback);
 }
 
 void GlobalEvents::GlobalHandler::reset() {
@@ -116,14 +138,14 @@ void GlobalEvents::GlobalHandler::reset() {
 	this->m_mouseButtonReleasedSTHandler.reset();
 }
 
-void GlobalEvents::GlobalHandler::deleteSpecificEvent(sf::Event::EventType specificAction, sf::Keyboard::Key key) {
+void GlobalEvents::GlobalHandler::m_deleteSingleEvent(sf::Event::EventType specificAction, sf::Keyboard::Key key) {
 	auto* subtypehandler = this->m_evaluateSubTypeHandler<sf::Keyboard::Key>(specificAction);
-	subtypehandler->removeCallback(key);
+	subtypehandler->removeSingleCallback(key);
 }
 
-void GlobalEvents::GlobalHandler::deleteSpecificEvent(sf::Event::EventType specificAction, sf::Mouse::Button btn) {
+void GlobalEvents::GlobalHandler::m_deleteSingleEvent(sf::Event::EventType specificAction, sf::Mouse::Button btn) {
 	auto* subtypehandler = this->m_evaluateSubTypeHandler<sf::Mouse::Button>(specificAction);
-	subtypehandler->removeCallback(btn);
+	subtypehandler->removeSingleCallback(btn);
 }
 
 void GlobalEvents::GlobalHandler::attachToKeyCallbackMultiset(sf::Event::EventType specificAction, sf::Keyboard::Key key, ECallbackAttechment callback) {
@@ -144,4 +166,42 @@ void GlobalEvents::GlobalHandler::deleteCallbackSet(sf::Event::EventType specifi
 void GlobalEvents::GlobalHandler::deleteCallbackSet(sf::Event::EventType specificAction, sf::Mouse::Button btn) {
 	auto* subtypehandler = this->m_evaluateSubTypeHandler<sf::Mouse::Button>(specificAction);
 	subtypehandler->removeCallbackSet(btn);
+}
+
+void GlobalEvents::GlobalHandler::deployActionMappingList(unsigned int amountOf, sf::Keyboard::Key ...) {
+	va_list args;
+	va_start(args, amountOf);
+
+	for (int i = 0; i <= amountOf; i++) {
+		sf::Keyboard::Key curr_arg = static_cast<sf::Keyboard::Key>(va_arg(args, int));
+		//#-- insert to map
+		this->m_keyActionMap.insert(std::make_pair(curr_arg, GlobalEvents::UIEventAction::NONE));
+		//#-- attach event callbacks
+		this->m_attachSingleKeyCallback(sf::Event::KeyPressed, curr_arg, [&, curr_arg] (const sf::Event&) -> void {
+			this->m_keyActionMap[curr_arg] = UIEventAction::PRESSED;
+		});
+		this->m_attachSingleKeyCallback(sf::Event::KeyReleased, curr_arg, [&, curr_arg] (const sf::Event&) -> void {
+			this->m_keyActionMap[curr_arg] = UIEventAction::RELEASED;
+		});
+	}
+
+	va_end(args);
+}
+
+void GlobalEvents::GlobalHandler::deployActionMappingList(unsigned int amountOf, sf::Mouse::Button ...) {
+	va_list args;
+	va_start(args, amountOf);
+
+	for (int i = 0; i <= amountOf; i++) {
+		sf::Mouse::Button curr_arg = static_cast<sf::Mouse::Button>(va_arg(args, int));
+		//#-- insert to map
+		this->m_mouseButtonActionMap.insert(std::make_pair(curr_arg, GlobalEvents::UIEventAction::NONE));
+		//#-- attach event callbacks
+		this->m_attachSingleMouseButtonCallback(sf::Event::MouseButtonPressed, curr_arg, [&, curr_arg] (const sf::Event&) -> void {
+			this->m_mouseButtonActionMap[curr_arg] = UIEventAction::PRESSED;
+		});
+		this->m_attachSingleMouseButtonCallback(sf::Event::MouseButtonReleased, curr_arg, [&, curr_arg] (const sf::Event&) -> void {
+			this->m_mouseButtonActionMap[curr_arg] = UIEventAction::RELEASED;
+		});
+	}
 }

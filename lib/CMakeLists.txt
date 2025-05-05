@@ -11,3 +11,8 @@ file(GLOB_RECURSE LIB_SOURCES ${SRC_FILES_}/*.cpp)
 add_library(${PROJECT_NAME} SHARED ${LIB_SOURCES} ${LIB_HEADERS})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_PATH_})
+target_link_libraries(${PROJECT_NAME} PUBLIC 
+    sfml-system 
+    sfml-window 
+    sfml-graphics
+)

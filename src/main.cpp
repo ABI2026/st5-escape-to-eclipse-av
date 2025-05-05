@@ -8,20 +8,36 @@ sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1700, 1000), "Esca
 GlobalEvents::GlobalHandler* hnd = new GlobalEvents::GlobalHandler(window);
 
 //#-- Inits
-void initBasicEventFunctionallity();
+void initBasicEventFunctionallity(GlobalEvents::GlobalHandler*);
 
 int main() {    
 
-    initBasicEventFunctionallity();
+    initBasicEventFunctionallity(hnd);
     
     while (window->isOpen()) {
         window->display();
         hnd->pollAndExecuteEvents();
+        if (hnd->getUIActionState(sf::Keyboard::Key::A) == GlobalEvents::UIEventAction::PRESSED) {
+            std::cout << "A Pressed!" << std::endl;
+        }
         window->clear(sf::Color::Black);
     }
     return 0;
 }
 
-void initBasicEventFunctionallity() {
-    //ToDo
+void initBasicEventFunctionallity(GlobalEvents::GlobalHandler* handler) {
+    handler->deployActionMappingList(9,
+        sf::Keyboard::Key::Escape,
+        sf::Keyboard::Key::W,
+        sf::Keyboard::Key::A,
+        sf::Keyboard::Key::S,
+        sf::Keyboard::Key::D,
+        sf::Keyboard::Key::Up,
+        sf::Keyboard::Key::Down,
+        sf::Keyboard::Key::Right,
+        sf::Keyboard::Key::Left
+    );
+    handler->deployActionMappingList(1,
+        sf::Mouse::Button::Right
+    );
 }

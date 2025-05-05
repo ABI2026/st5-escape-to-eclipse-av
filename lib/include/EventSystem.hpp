@@ -11,6 +11,12 @@ namespace GlobalEvents {
 
 	template <typename evt_type>
 	using EventCallMap = std::unordered_map<evt_type, ECallbackAttechment>;
+
+	typedef enum UIEventAction : unsigned char {
+		NONE,
+		PRESSED,
+		RELEASED
+	} UIEventAction;
 	
 	/*
 		@brief class "SubTypeHandler"
@@ -29,9 +35,9 @@ namespace GlobalEvents {
 		SubTypeHandler() = default;
 		~SubTypeHandler() = default;
 
-		void addCallback(EvtSubType, ECallbackAttechment);
+		void addSingleCallback(EvtSubType, ECallbackAttechment);
 		void addCallbackToMultiSet(EvtSubType, ECallbackAttechment);
-		void removeCallback(EvtSubType);
+		void removeSingleCallback(EvtSubType);
 		void resetCallbackMultiset();
 		void resetCallbackSingleSet();
 		void removeCallbackSet(EvtSubType);
@@ -58,17 +64,24 @@ namespace GlobalEvents {
 		void pollAndExecuteEvents();
 		void attachStandardWindowEventCallback(sf::Event::EventType, ECallbackAttechment);
 
-		void attachKeyCallback(sf::Event::EventType, sf::Keyboard::Key, ECallbackAttechment);
-		void attachMouseButtonCallback(sf::Event::EventType, sf::Mouse::Button, ECallbackAttechment);
 		void attachToKeyCallbackMultiset(sf::Event::EventType, sf::Keyboard::Key, ECallbackAttechment);
 		void attachToMouseCallbackMultiset(sf::Event::EventType, sf::Mouse::Button, ECallbackAttechment);
 
 		void reset();
 
-		void deleteSpecificEvent(sf::Event::EventType, sf::Keyboard::Key);
-		void deleteSpecificEvent(sf::Event::EventType, sf::Mouse::Button);
 		void deleteCallbackSet(sf::Event::EventType, sf::Keyboard::Key);
 		void deleteCallbackSet(sf::Event::EventType, sf::Mouse::Button);
+
+		void deployActionMappingList(unsigned int, sf::Keyboard::Key ...);
+		void deployActionMappingList(unsigned int, sf::Mouse::Button ...);
+
+		[[nodiscard]] inline UIEventAction getUIActionState(sf::Keyboard::Key key) {
+			return this->m_keyActionMap[key];
+		}
+
+		[[nodiscard]] inline UIEventAction getUIActionState(sf::Mouse::Button btn) {
+			return this->m_mouseButtonActionMap[btn];
+		}
 
 	private:
 		sf::RenderWindow* m_window = nullptr;
@@ -79,6 +92,8 @@ namespace GlobalEvents {
 		EventCallMap<sf::Event::EventType> m_wrapperCallmap;
 		
 		sf::Vector2f m_currentMousePosition{};
+		std::unordered_map<sf::Mouse::Button, UIEventAction> m_mouseButtonActionMap;
+		std::unordered_map<sf::Keyboard::Key, UIEventAction> m_keyActionMap;
 
 		template <typename EvtCallbackType>
 		SubTypeHandler<EvtCallbackType>* m_evaluateSubTypeHandler(sf::Event::EventType action) {
@@ -112,6 +127,11 @@ namespace GlobalEvents {
 			}
 			return nullptr;
 		}
+
+		void m_attachSingleKeyCallback(sf::Event::EventType, sf::Keyboard::Key, ECallbackAttechment);
+		void m_attachSingleMouseButtonCallback(sf::Event::EventType, sf::Mouse::Button, ECallbackAttechment);
+		void m_deleteSingleEvent(sf::Event::EventType, sf::Keyboard::Key);
+		void m_deleteSingleEvent(sf::Event::EventType, sf::Mouse::Button);
 	};
 }
 

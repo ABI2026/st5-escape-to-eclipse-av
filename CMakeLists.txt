@@ -10,6 +10,8 @@ set(SFML_STATIC_LIBRARIES TRUE)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+add_compile_options(-w)
+
 # Remotely include SFML LIB
 include(FetchContent)
 FetchContent_Declare(SFML
