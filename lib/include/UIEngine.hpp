@@ -1,92 +1,117 @@
 #ifndef UI_ENGINE
 #define UI_ENGINE
 
-namespace UIEngine {
-    /*namespace UIConfig {
-        typedef std::array<std::array<sf::Color, 2>, 3> accentColorArray;
-        typedef struct GeneralTheme {
-            private:
-                static sf::Color grayScaleLevels[8];
-                sf::Color primaryAccentColors[2];
-                sf::Color accentColorsScalesSolid[2][3];
-                sf::Color accentColorsScalesTransparent[2][3];
-                std::unordered_map<std::string, sf::Font> fontConfigList;
-                float downScaleFactors[3] = { 0.7f, 0.5f, 0.3f };
-            public:
-                inline void addFontFamily(std::string, sf::Font);
-                inline sf::Font getFontFamily(std::string identifier) { return this->fontConfigList[identifier]; }
-                inline sf::Color getPrimaryAccentColor0() const { return this->primaryAccentColors[0]; }
-                inline sf::Color getPrimaryAccentColor1() const { return this->primaryAccentColors[1]; }
-                const accentColorArray getSolidAccentColorScales() const;
-                const accentColorArray getTransparentAccentColorScales() const;
-        
-                GeneralTheme() = default;
-                GeneralTheme(sf::Color firstPrimaryAccentColor, sf::Font headlineFont, 
-                             sf::Font primaryFont, sf::Color secondPrimaryAccentColor = sf::Color(0x0)) 
-                {
-                    //#-- Set grayscale color scales
-                    this->grayScaleLevels[0] = sf::Color(0, 0, 0, 255);
-                    this->grayScaleLevels[1] = sf::Color(51, 51, 51, 255);
-                    this->grayScaleLevels[2] = sf::Color(89, 89, 89, 255);
-                    this->grayScaleLevels[3] = sf::Color(128, 128, 128, 255);
-                    this->grayScaleLevels[4] = sf::Color(145, 145, 145, 255);
-                    this->grayScaleLevels[5] = sf::Color(180, 180, 180, 255);
-                    this->grayScaleLevels[6] = sf::Color(220, 220, 220, 255);
-                    this->grayScaleLevels[7] = sf::Color(255, 255, 255, 255);
-                    //#-- Set primary accent colors
-                    this->primaryAccentColors[0] = firstPrimaryAccentColor;
-                    this->primaryAccentColors[1] = secondPrimaryAccentColor;
-                    //#-- Downscale brightness of colors for specific color scales
-                    //#- solid
-                    for (int accentColorIdx = 0; accentColorIdx < 2; accentColorIdx++) {
-                        for (int colorScaleIdx = 0; colorScaleIdx < 3; colorScaleIdx++) {
-                            this->accentColorsScalesSolid[accentColorIdx][colorScaleIdx] = sf::Color(
-                                (this->primaryAccentColors[accentColorIdx].r * this->downScaleFactors[colorScaleIdx]),
-                                (this->primaryAccentColors[accentColorIdx].g * this->downScaleFactors[colorScaleIdx]),
-                                (this->primaryAccentColors[accentColorIdx].b * this->downScaleFactors[colorScaleIdx])
-                            );
-                        }
-                    }
-                    //#- transparent
-                    for (int accentColorIdx = 0; accentColorIdx < 2; accentColorIdx++) {
-                        for (int colorScaleIdx = 0; colorScaleIdx < 3; colorScaleIdx++) {
-                            sf::Color currentAccentColor = this->primaryAccentColors[accentColorIdx];
-                            currentAccentColor.a *= downScaleFactors[colorScaleIdx];
-                            this->accentColorsScalesTransparent[accentColorIdx][colorScaleIdx] = currentAccentColor;
-                        }
-                    }
-                    //#- set primary fonts
-                    this->fontConfigList.insert({ "headline-font", headlineFont });
-                    this->fontConfigList.insert({ "primary-font", primaryFont });
-                }
-            } GeneralTheme;
-            
-        class UIConfigurator {
-            public:
-                UIConfigurator() = default;
-                UIConfigurator(const UIConfigurator&) = delete;
-                UIConfigurator& operator=(const UIConfigurator&) = delete;
-        
-                bool loadFonts();
+#include "framework_env.hpp"
+#include "EventSystem.hpp"
 
-                static UIConfigurator* getSingleton() {
-                    UIConfigurator* singletonInstance = new UIConfigurator();
-                    return singletonInstance;
-                }
+namespace UIEngine {
+
+    typedef enum UIItemEventAction : unsigned int {
+        MOUSEOVER = 0,
+        MOUSEOUT = 1,
+        MOUSEDOWN = 2,
+        MOUSEUP = 3,
+    } UIItemEventAction;
+
+    namespace Alignment {
+        typedef struct Margin {
+            float left;
+            float right;
+            float top;
+            float bottom;
+
+            Margin(float t, float r, float b, float l) :
+            left(l), right(r), top(t), bottom(b) {};
+        } Margin;
+    
+        typedef enum InnerAlignment : unsigned int {
+            IA_FLEX,
+            IA_GRID,
+            IA_ABSOLUTE
+        } InnerAlignment;
         
-                inline void addNewTheme(std::string, GeneralTheme*);
-                inline void setCurrentTheme(std::string);
-        
-                [[nodiscard]] inline GeneralTheme* getCurrentTheme() const { return this->m_currentUITheme; }
-                [[nodiscard]] inline sf::Font* getFontByID(std::string id) { return this->m_UIFonts[id]; }
-        
+        //#-- Flex settings
+        typedef enum FlexDirection : unsigned int {
+            D_ROW,
+            D_COLUMN
+        } FlexDirection;
+
+        typedef enum FlexJustifyContent: unsigned int {
+            J_SPACE_AROUND,
+            J_SPACE_BETWEEN,
+            J_CENTER,
+            J_FLEXSTART,
+            J_FLEXEND
+        } FlexJustifyContent;
+
+        typedef enum FlexAlignContent: unsigned int {
+            AL_CENTER,
+            AL_FLEXSTART,
+            AL_FLEXEND
+        } FlexAlignContent;
+
+        //#-- Grid Settings
+        typedef struct GridTemplate {
+            sf::Vector2f* gridTemplateRows[20];
+            sf::Vector2f* gridTemplateColumns[20];
+            std::string** gridTemplateAreas[20][20];
+
+            [[maybe_unused]] bool setGridRows(int, sf::Vector2f ...);
+            [[maybe_unused]] bool setGridColumns(int, sf::Vector2f ...);
+            [[maybe_unused]] bool setGridAreaIDs(std::string ...);
+            
+            GridTemplate() = default;
             private:
-                std::unordered_map<std::string, GeneralTheme*> m_uiThemes;
-                std::unordered_map<std::string, sf::Font*> m_UIFonts;
-                bool initSuccess = false;
-                GeneralTheme* m_currentUITheme;
+                bool finished{false};
+
+        } GridTemplate;
+    }
+
+    namespace UIConfig {
+        //#-- Todo
+    }
+    namespace UIComponents {
+        class Interactible {
+            public:
+                Interactible(GlobalEvents::GlobalHandler*);
+                Interactible& operator=(Interactible&) = delete;
+                ~Interactible() = default;
+
+                void setOnMouseOver(GlobalEvents::ECallbackAttechment);
+                void setOnMouseOut(GlobalEvents::ECallbackAttechment);
+                void setOnMouseDown(GlobalEvents::ECallbackAttechment);
+                void setOnMouseUp(GlobalEvents::ECallbackAttechment);
+
+            protected:
+                std::unordered_map<UIItemEventAction, GlobalEvents::ECallbackAttechment> m_callbackMap;
+                GlobalEvents::GlobalHandler* m_hnd;
+
+                virtual void m_onMouseOver() = 0;
+                virtual void m_onMouseOut() = 0;
+                virtual void m_onMouseDown() = 0;
+                virtual void m_onMouseUp() = 0;
+
         };
-    }*/
+        class UIComponent : public sf::Drawable, public Interactible, public sf::Transformable {
+            public:
+                UIComponent() = default;
+                UIComponent(GlobalEvents::GlobalHandler* p_hnd, sf::Vector2f relPos) : Interactible(p_hnd), Transformable(), m_relativePosition(relPos) {};
+
+                inline void setRelativePosition(float x, float y) {
+                    this->m_relativePosition.x = x;
+                    this->m_relativePosition.y = y;
+                };
+            
+            protected:
+                sf::Vector2f m_relativePosition;
+            private:
+                virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const = 0;
+
+        };
+        class CascardingDIV : public UIComponent {
+
+        };
+    }
 }
 
 #endif UI_ENGINE

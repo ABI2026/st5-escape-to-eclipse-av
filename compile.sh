@@ -1,3 +1,4 @@
+
 BINARY="./build/bin/Escape-To-Eclipse";
 
 cmake --build ./build;
