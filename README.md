@@ -5,7 +5,7 @@ This game is primary about the colonialisation of new scapes in further space, w
 
 ## :hammer: Compiler Configuration with CMake
 
-Instructions to compile the Game
+**Instructions to compile the Game by yourself**
 
 <table>
     <tr>
@@ -29,3 +29,11 @@ Instructions to compile the Game
         <td><code>sudo chmod 777 ./bin/Escape-To-Eclipse</code></td>
     </tr>
 </table>
+
+**Another possabillity is to build automatically:**
+
+Search for the file ```./compile.sh``` and run it as SUDO!
+
+---
+
+Make with :heart: by Moritz Feik
