@@ -13,7 +13,7 @@ Alignment::GridTemplate::~GridTemplate() {
     //#-- everything removed!
 }
 
-//#-- Return value may be unused
+//#- Return value may be unused
 bool Alignment::GridTemplate::setGridRows(unsigned int diff, sf::Vector2f ...) {
     va_list args;
     va_start(args, diff);
@@ -40,7 +40,7 @@ bool Alignment::GridTemplate::setGridRows(unsigned int diff, sf::Vector2f ...) {
     va_end(args);
     return false;
 }
-//#-- Return value may be unused
+//#- Return value may be unused
 bool Alignment::GridTemplate::setGridColumns(unsigned int diff, sf::Vector2f ...) {
     va_list args;
     va_start(args, diff);
@@ -105,19 +105,19 @@ bool Alignment::GridTemplate::m_checkUsabillity() const {
 }
 
 //#-- Definitions of UIComponents::Interactible
-UIComponents::Interactible::Interactible(GlobalEvents::GlobalHandler* hnd) : m_hnd(hnd) {
+UIComponents::Interactible::Interactible() {
     for (unsigned int i = 0; i < 4; i++) {
-        this->m_callbackMap.insert(std::make_pair(static_cast<UIItemEventAction>(i), [&] (const sf::Event&) -> void {}));
+        this->m_eventCallbackMap.insert(std::make_pair(static_cast<UIItemEventAction>(i), [&] (const sf::Event&) -> void {}));
     }
 };
 void UIComponents::Interactible::setOnMouseOver(GlobalEvents::ECallbackAttechment cb) 
-{ this->m_callbackMap[UIItemEventAction::MOUSEOVER] = cb; }
+{ this->m_eventCallbackMap[UIItemEventAction::MOUSEOVER] = cb; }
 
 void UIComponents::Interactible::setOnMouseOut(GlobalEvents::ECallbackAttechment cb)
-{ this->m_callbackMap[UIItemEventAction::MOUSEOUT] = cb; }
+{ this->m_eventCallbackMap[UIItemEventAction::MOUSEOUT] = cb; }
 
 void UIComponents::Interactible::setOnMouseDown(GlobalEvents::ECallbackAttechment cb)
-{ this->m_callbackMap[UIItemEventAction::MOUSEDOWN] = cb; }
+{ this->m_eventCallbackMap[UIItemEventAction::MOUSEDOWN] = cb; }
 
 void UIComponents::Interactible::setOnMouseUp(GlobalEvents::ECallbackAttechment cb)
-{ this->m_callbackMap[UIItemEventAction::MOUSEUP] = cb; }
+{ this->m_eventCallbackMap[UIItemEventAction::MOUSEUP] = cb; }

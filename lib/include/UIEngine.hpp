@@ -24,13 +24,21 @@ namespace UIEngine {
 
             Margin(float t, float r, float b, float l) :
             left(l), right(r), top(t), bottom(b) {};
+            Margin() = default;
         } Margin;
     
         typedef enum InnerAlignment : unsigned int {
             IA_FLEX,
             IA_GRID,
-            IA_ABSOLUTE
+            IA_RELATIVE,
         } InnerAlignment;
+
+        typedef enum SelfAlign : unsigned int {
+            SA_RELATIVE
+            SA_CENTER,
+            SA_START,
+            SA_END
+        } SelfAlign;
         
         //#-- Flex settings
         typedef enum FlexDirection : unsigned int {
@@ -46,11 +54,11 @@ namespace UIEngine {
             J_FLEXEND
         } FlexJustifyContent;
 
-        typedef enum FlexAlignContent: unsigned int {
+        typedef enum FlexAlignItems: unsigned int {
             AL_CENTER,
             AL_FLEXSTART,
             AL_FLEXEND
-        } FlexAlignContent;
+        } FlexAlignItems;
 
         //#-- Grid Settings
         typedef struct GridTemplate {
@@ -84,7 +92,7 @@ namespace UIEngine {
     namespace UIComponents {
         class Interactible {
             public:
-                Interactible(GlobalEvents::GlobalHandler*);
+                Interactible();
                 Interactible& operator=(Interactible&) = delete;
                 ~Interactible() = default;
 
@@ -94,7 +102,7 @@ namespace UIEngine {
                 void setOnMouseUp(GlobalEvents::ECallbackAttechment);
 
             protected:
-                std::unordered_map<UIItemEventAction, GlobalEvents::ECallbackAttechment> m_callbackMap;
+                std::unordered_map<UIItemEventAction, GlobalEvents::ECallbackAttechment> m_eventCallbackMap;
                 GlobalEvents::GlobalHandler* m_hnd;
 
                 virtual void m_onMouseOver() = 0;
@@ -103,25 +111,86 @@ namespace UIEngine {
                 virtual void m_onMouseUp() = 0;
 
         };
-        class UIComponent : public sf::Drawable, public Interactible, public sf::Transformable {
+        class UIComponent : public sf::Drawable, public sf::Transformable {
             public:
                 UIComponent() = default;
-                UIComponent(GlobalEvents::GlobalHandler* p_hnd, sf::Vector2f relPos) : Interactible(p_hnd), Transformable(), m_relativePosition(relPos) {};
+                UIComponent() : Interactible(), Transformable() {};
 
                 inline void setRelativePosition(float x, float y) {
                     this->m_relativePosition.x = x;
                     this->m_relativePosition.y = y;
                 };
+
+                inline void setSelfAlign(Alignment::SelfAlign selfAlignMode) { 
+                    this->m_selfAlignment = selfAlignMode;
+                }
+
+                inline void setMargin(Alignment::Margin margin) {
+                    this->m_margin = margin;
+                }
+
+                inline void setPadding(Alignment::Margin padding) {
+                    this->m_padding = padding;
+                }
+
+                inline void setRelativePosition(sf::Vector2f relativePos) {
+                    this->m_relativePosition = relativePos;
+                }
+
+                inline void setGridArea(std::string areaID) {
+                    this->m_gridArea = areaID;
+                }
+
+                inline void setParentComponent(UIComponent* parent) {
+                    this->m_parent = parent;
+                }
+
+                [[nodiscard]] inline sf::Vector2f getRelativePosition() const {
+                    return this->m_relativePosition;
+                }
+
+                [[nodiscard]] inline Alignment::Margin getMargin() const {
+                    return this->m_margin;
+                }
+
+                [[nodiscard]] inline Alignment::Margin getPadding() const {
+                    return this->m_padding;
+                }
+
+                [[nodiscard]] inline Alignment::SelfAlign getSelfAlignMode() const {
+                    return this->m_selfAlignment;
+                }
+
+                [[nodiscard]] inline std::string getGridArea() const {
+                    return this->m_gridArea;
+                }
+
+                [[nodiscard]] inline UIComponent* getParentComponent() const {
+                    return this->m_parent;
+                }
             
             protected:
                 sf::Vector2f m_relativePosition;
+                Alignment::Margin m_margin;
+                Alignment::Margin m_padding;
+                Alignment::SelfAlign m_selfAlignment;
+
+                std::string m_gridArea{""};
+
+                UIComponent* m_parent{nullptr};
+
             private:
                 virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const = 0;
 
         };
-        class CascardingDIV : public UIComponent {
 
-        };
+        class UIContainer : public UIComponent {
+
+        }
+
+        class UIItem : public UIComponent {
+
+        }
     }
 }
 
