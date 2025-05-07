@@ -36,4 +36,4 @@ Search for the file ```./compile.sh``` and run it as SUDO!
 
 ---
 
-Make with :heart: by Moritz Feik
+Made with :heart: by Moritz Feik
