@@ -1,7 +1,15 @@
+BUILD_DIR="./build"
 
-BINARY="./build/bin/Escape-To-Eclipse";
+if [ -d "$BUILD_DIR" ]; then
+	cmake --build $BUILD_DIR;
+else
+	mkdir -p build;
+	cmake -S ./ -B $BUILD_DIR;
+	cmake --build $BUILD_DIR;
+fi
 
-cmake --build ./build;
+BINARY="$BUILD_DIR/bin/Escape-To-Eclipse";
+
 if [ -x "$BINARY" ]; then
 	$BINARY;
 else

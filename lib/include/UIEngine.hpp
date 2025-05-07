@@ -4,6 +4,8 @@
 #include "framework_env.hpp"
 #include "EventSystem.hpp"
 
+#include "Utillity.h"
+
 namespace UIEngine {
 
     typedef enum UIItemEventAction : unsigned int {
@@ -52,17 +54,26 @@ namespace UIEngine {
 
         //#-- Grid Settings
         typedef struct GridTemplate {
-            sf::Vector2f* gridTemplateRows[20];
-            sf::Vector2f* gridTemplateColumns[20];
-            std::string** gridTemplateAreas[20][20];
+            sf::Vector2f* gridTemplateRows{nullptr};
+            sf::Vector2f* gridTemplateColumns{nullptr};
+            std::string** gridTemplateAreas{nullptr};
 
-            [[maybe_unused]] bool setGridRows(int, sf::Vector2f ...);
-            [[maybe_unused]] bool setGridColumns(int, sf::Vector2f ...);
-            [[maybe_unused]] bool setGridAreaIDs(std::string ...);
+            //#-- Return value may be unused
+            [[maybe_unused]] bool setGridRows(unsigned int, sf::Vector2f ...);
+            [[maybe_unused]] bool setGridColumns(unsigned int, sf::Vector2f ...);
+            [[maybe_unused]] bool setGridAreaIDs(std::string);
+
+            [[nodiscard]] inline bool usable() const { return this->m_completed; }
             
             GridTemplate() = default;
+            ~GridTemplate();
             private:
-                bool finished{false};
+
+                [[nodiscard]] bool m_checkUsabillity() const;
+
+                unsigned int m_rowDiff{0};
+                unsigned int m_columnDiff{0};
+                bool m_completed{false};
 
         } GridTemplate;
     }
