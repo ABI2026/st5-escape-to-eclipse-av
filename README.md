@@ -35,5 +35,3 @@ This game is primary about the colonialisation of new scapes in further space, w
 Search for the file ```./compile.sh``` and run it as SUDO!
 
 ---
-
-Made with :heart: by Moritz Feik
