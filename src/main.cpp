@@ -2,7 +2,7 @@
 #include <cmath>
 #include <SFML/Graphics.hpp>
 
-#include "EventSystem.hpp"
+#include "Test.hpp"
 
 sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1700, 1000), "Escape To Eclipse", sf::Style::Default);
 GlobalEvents::GlobalHandler* hnd = new GlobalEvents::GlobalHandler(window);
@@ -17,9 +17,7 @@ int main() {
     while (window->isOpen()) {
         window->display();
         hnd->pollAndExecuteEvents();
-        if (hnd->getUIActionState(sf::Keyboard::Key::A) == GlobalEvents::UIEventAction::PRESSED) {
-            std::cout << "A Pressed!" << std::endl;
-        }
+        window->draw(new DialogTest());
         window->clear(sf::Color::Black);
     }
     return 0;

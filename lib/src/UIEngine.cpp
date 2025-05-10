@@ -14,19 +14,19 @@ Alignment::GridTemplate::~GridTemplate() {
 }
 
 //#- Return value may be unused
-bool Alignment::GridTemplate::setGridRows(unsigned int diff, sf::Vector2f ...) {
+bool Alignment::GridTemplate::setGridRows(unsigned int diff, Alignment::Vector<float> ...) {
     va_list args;
     va_start(args, diff);
 
     (!this->m_rowDiff == 0) ? this->m_rowDiff = diff : this->m_rowDiff;
-
+    
     this->m_completed = this->m_checkUsabillity();
 
     if (this->m_rowDiff == diff) {
         delete[] this->gridTemplateRows;
-        this->gridTemplateRows = new sf::Vector2f[this->m_rowDiff];
+        this->gridTemplateRows = new Alignment::Vector<float>[this->m_rowDiff];
         for (int i = 0; i < this->m_rowDiff; i++) {
-            sf::Vector2f limitPoint = va_arg(args, sf::Vector2f);
+            Alignment::Vector<float> limitPoint = va_arg(args, Alignment::Vector<float>);
             *(this->gridTemplateRows + i) = limitPoint;
         }
         for (int i = 0; i < this->m_rowDiff; i++) {
@@ -41,7 +41,7 @@ bool Alignment::GridTemplate::setGridRows(unsigned int diff, sf::Vector2f ...) {
     return false;
 }
 //#- Return value may be unused
-bool Alignment::GridTemplate::setGridColumns(unsigned int diff, sf::Vector2f ...) {
+bool Alignment::GridTemplate::setGridColumns(unsigned int diff, Alignment::Vector<float> ...) {
     va_list args;
     va_start(args, diff);
 
@@ -51,9 +51,9 @@ bool Alignment::GridTemplate::setGridColumns(unsigned int diff, sf::Vector2f ...
 
     if (this->m_columnDiff == diff) {
         delete[] this->gridTemplateColumns;
-        this->gridTemplateColumns = new sf::Vector2f[this->m_columnDiff];
+        this->gridTemplateColumns = new Alignment::Vector<float>[this->m_columnDiff];
         for (int i = 0; i < this->m_columnDiff; i++) {
-            sf::Vector2f limitPoint = va_arg(args, sf::Vector2f);
+            Alignment::Vector<float> limitPoint = va_arg(args, Alignment::Vector<float>);
             *(this->gridTemplateColumns + i) = limitPoint;
         }
         for (int i = 0; i < this->m_rowDiff; i++) {

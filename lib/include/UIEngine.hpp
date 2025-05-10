@@ -4,7 +4,7 @@
 #include "framework_env.hpp"
 #include "EventSystem.hpp"
 
-#include "Utillity.h"
+#include "Utillity.hpp"
 
 namespace UIEngine {
 
@@ -16,6 +16,15 @@ namespace UIEngine {
     } UIItemEventAction;
 
     namespace Alignment {
+        template <typename Numeric>
+        struct Vector {
+            Numeric x;
+            Numeric y;
+
+            Vector(Numeric x, Numeric y) : x(x), y(y) {};
+            Vector() = default;
+        };
+
         typedef struct Margin {
             float left;
             float right;
@@ -30,11 +39,11 @@ namespace UIEngine {
         typedef enum InnerAlignment : unsigned int {
             IA_FLEX,
             IA_GRID,
-            IA_RELATIVE,
+            IA_RELATIVE
         } InnerAlignment;
 
         typedef enum SelfAlign : unsigned int {
-            SA_RELATIVE
+            SA_RELATIVE,
             SA_CENTER,
             SA_START,
             SA_END
@@ -62,13 +71,13 @@ namespace UIEngine {
 
         //#-- Grid Settings
         typedef struct GridTemplate {
-            sf::Vector2f* gridTemplateRows{nullptr};
-            sf::Vector2f* gridTemplateColumns{nullptr};
+            Alignment::Vector<float>* gridTemplateRows{nullptr};
+            Alignment::Vector<float>* gridTemplateColumns{nullptr};
             std::string** gridTemplateAreas{nullptr};
 
             //#-- Return value may be unused
-            [[maybe_unused]] bool setGridRows(unsigned int, sf::Vector2f ...);
-            [[maybe_unused]] bool setGridColumns(unsigned int, sf::Vector2f ...);
+            [[maybe_unused]] bool setGridRows(unsigned int, Alignment::Vector<float> ...);
+            [[maybe_unused]] bool setGridColumns(unsigned int, Alignment::Vector<float>  ...);
             [[maybe_unused]] bool setGridAreaIDs(std::string);
 
             [[nodiscard]] inline bool usable() const { return this->m_completed; }
@@ -93,8 +102,7 @@ namespace UIEngine {
         class Interactible {
             public:
                 Interactible();
-                Interactible& operator=(Interactible&) = delete;
-                ~Interactible() = default;
+                virtual ~Interactible() = default;
 
                 void setOnMouseOver(GlobalEvents::ECallbackAttechment);
                 void setOnMouseOut(GlobalEvents::ECallbackAttechment);
@@ -111,10 +119,11 @@ namespace UIEngine {
                 virtual void m_onMouseUp() = 0;
 
         };
-        class UIComponent : public sf::Drawable, public sf::Transformable {
+        class UIComponent : public sf::Drawable {
             public:
                 UIComponent() = default;
-                UIComponent() : Interactible(), Transformable() {};
+
+                virtual ~UIComponent() = default;
 
                 inline void setRelativePosition(float x, float y) {
                     this->m_relativePosition.x = x;
@@ -168,6 +177,8 @@ namespace UIEngine {
                 [[nodiscard]] inline UIComponent* getParentComponent() const {
                     return this->m_parent;
                 }
+                
+                //virtual void update(GlobalEvents::GlobalHandler*) = 0;
             
             protected:
                 sf::Vector2f m_relativePosition;
@@ -179,19 +190,49 @@ namespace UIEngine {
 
                 UIComponent* m_parent{nullptr};
 
-            private:
-                virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const = 0;
-
+                virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override = 0;
         };
 
-        class UIContainer : public UIComponent {
+        class UICContainer : public UIComponent {
+            public:
 
-        }
+                virtual ~UICContainer() = default;
+
+                [[nodiscard]] inline Alignment::GridTemplate getAlignmentMatrix() const {
+                    return this->m_alignmentMatrix;
+                }
+
+                [[nodiscard]] inline Alignment::FlexDirection getFlexDirection() const {
+                    return this->m_flexDirection;
+                }  
+
+                [[nodiscard]] inline Alignment::FlexJustifyContent getContentJustification() const {
+                    return this->m_justifyContentMode;
+                }
+
+                [[nodiscard]] inline Alignment::FlexAlignItems getItemAlignment() const {
+                    return this->m_itemAlignment;
+                }
+
+                [[nodiscard]] inline sf::RectangleShape getShape() const {
+                    return this->m_shape;
+                }
+
+            protected:
+                Alignment::GridTemplate m_alignmentMatrix;
+                Alignment::FlexDirection m_flexDirection;
+                Alignment::FlexJustifyContent m_justifyContentMode;
+                Alignment::FlexAlignItems m_itemAlignment;
+
+                sf::RectangleShape m_shape;
+
+                virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const = 0;
+        };
 
         class UIItem : public UIComponent {
 
-        }
+        };
     }
 }
 
-#endif UI_ENGINE
+#endif
