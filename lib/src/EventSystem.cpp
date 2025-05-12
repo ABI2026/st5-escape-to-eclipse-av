@@ -1,4 +1,5 @@
 #include "EventSystem.hpp"
+#include <iostream>
 
 //#-- Explicit template types definition
 template class GlobalEvents::SubTypeHandler<sf::Event::EventType>;
@@ -88,8 +89,8 @@ GlobalEvents::GlobalHandler::GlobalHandler(sf::RenderWindow* window)
 	this->attachStandardWindowEventCallback(sf::Event::EventType::Resized, [&] (const sf::Event& evt) -> void {
 		sf::View newView = this->m_window->getDefaultView();
 		newView.setCenter(
-			(static_cast<float>(evt.size.height) / 2),
-			(static_cast<float>(evt.size.width) / 2)
+			(static_cast<float>(evt.size.width) / 2),
+			(static_cast<float>(evt.size.height) / 2)
 		);
 		newView.setSize(
 			static_cast<float>(evt.size.width),
@@ -98,6 +99,7 @@ GlobalEvents::GlobalHandler::GlobalHandler(sf::RenderWindow* window)
 		this->m_window->setView(newView);
 	});
 }
+
 
 void GlobalEvents::GlobalHandler::pollAndExecuteEvents() {
 	for (auto& item : this->m_keyActionMap) {

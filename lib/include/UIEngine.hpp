@@ -111,7 +111,6 @@ namespace UIEngine {
 
             protected:
                 std::unordered_map<UIItemEventAction, GlobalEvents::ECallbackAttechment> m_eventCallbackMap;
-                GlobalEvents::GlobalHandler* m_hnd;
 
                 virtual void m_onMouseOver() = 0;
                 virtual void m_onMouseOut() = 0;
@@ -119,7 +118,7 @@ namespace UIEngine {
                 virtual void m_onMouseUp() = 0;
 
         };
-        class UIComponent : public sf::Drawable {
+        class UIComponent {
             public:
                 UIComponent() = default;
 
@@ -177,8 +176,8 @@ namespace UIEngine {
                 [[nodiscard]] inline UIComponent* getParentComponent() const {
                     return this->m_parent;
                 }
-                
-                //virtual void update(GlobalEvents::GlobalHandler*) = 0;
+            
+                virtual void update_(GlobalEvents::GlobalHandler*) = 0;
             
             protected:
                 sf::Vector2f m_relativePosition;
@@ -189,11 +188,9 @@ namespace UIEngine {
                 std::string m_gridArea{""};
 
                 UIComponent* m_parent{nullptr};
-
-                virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override = 0;
         };
 
-        class UICContainer : public UIComponent {
+        class UICContainer : public UIComponent, public sf::RectangleShape {
             public:
 
                 virtual ~UICContainer() = default;
@@ -218,20 +215,38 @@ namespace UIEngine {
                     return this->m_shape;
                 }
 
+                [[nodiscard]] inline UICContainer* getParent() const {
+                    return this->m_parent;
+                }
+
+                [[nodiscard]] inline UICContainer* getChild() const {
+                    return this->m_child;
+                }
+
+                [[nodiscard]] UIComponent& getUIItem(std::string id) const {
+                    for (UIComponent& comp : this->m_uiItems) {
+                        if (comp.id == id) {
+                            return comp;
+                        }
+                    }
+                }
+
+                [[nodiscard]] std::vector<UIComponent>* getUIItems() const {
+                    return this->m_uiItems;
+                }
+
             protected:
                 Alignment::GridTemplate m_alignmentMatrix;
                 Alignment::FlexDirection m_flexDirection;
                 Alignment::FlexJustifyContent m_justifyContentMode;
                 Alignment::FlexAlignItems m_itemAlignment;
 
-                sf::RectangleShape m_shape;
+                UICContainer* m_parent;
+                UICContainer* m_child;
 
-                virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const = 0;
+                std::vector<UIComponent>* m_uiItems;
         };
 
-        class UIItem : public UIComponent {
-
-        };
     }
 }
 

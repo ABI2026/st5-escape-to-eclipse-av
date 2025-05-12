@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <thread>
 #include <SFML/Graphics.hpp>
 
 #include "Test.hpp"
@@ -12,14 +12,16 @@ void initBasicEventFunctionallity(GlobalEvents::GlobalHandler*);
 
 int main() {    
 
+    window->setFramerateLimit(60);
     initBasicEventFunctionallity(hnd);
-    
+
     while (window->isOpen()) {
-        window->display();
-        hnd->pollAndExecuteEvents();
-        window->draw(new DialogTest());
         window->clear(sf::Color::Black);
+        hnd->pollAndExecuteEvents();
+        window->display();    
     }
+
+
     return 0;
 }
 

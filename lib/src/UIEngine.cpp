@@ -19,7 +19,7 @@ bool Alignment::GridTemplate::setGridRows(unsigned int diff, Alignment::Vector<f
     va_start(args, diff);
 
     (!this->m_rowDiff == 0) ? this->m_rowDiff = diff : this->m_rowDiff;
-    
+
     this->m_completed = this->m_checkUsabillity();
 
     if (this->m_rowDiff == diff) {
@@ -121,3 +121,5 @@ void UIComponents::Interactible::setOnMouseDown(GlobalEvents::ECallbackAttechmen
 
 void UIComponents::Interactible::setOnMouseUp(GlobalEvents::ECallbackAttechment cb)
 { this->m_eventCallbackMap[UIItemEventAction::MOUSEUP] = cb; }
+
+//#-- Definitions of UIComponent abstract class
