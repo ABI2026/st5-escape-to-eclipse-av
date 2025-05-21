@@ -98,6 +98,11 @@ namespace UIEngine {
     namespace UIConfig {
         //#-- Todo
     }
+
+    class UIOverlayManager {
+
+    };
+
     namespace UIComponents {
         class Interactible {
             public:
@@ -118,9 +123,16 @@ namespace UIEngine {
                 virtual void m_onMouseUp() = 0;
 
         };
+        class UIOverlay {
+            
+
+        };
         class UIComponent {
             public:
                 UIComponent() = default;
+                UIComponent(std::string id, sf::Vector2f relPos, sf::Vector2f dims,
+                            Alignment::Margin margin, Alignment::Margin padding,
+                            Alignment::SelfAlign selfAlign)
 
                 virtual ~UIComponent() = default;
 
@@ -128,6 +140,10 @@ namespace UIEngine {
                     this->m_relativePosition.x = x;
                     this->m_relativePosition.y = y;
                 };
+
+                inline void setRelativePosition(sf::Vector2f relPos) {
+                    this->m_relativePosition = relPos;
+                }
 
                 inline void setSelfAlign(Alignment::SelfAlign selfAlignMode) { 
                     this->m_selfAlignment = selfAlignMode;
@@ -141,16 +157,16 @@ namespace UIEngine {
                     this->m_padding = padding;
                 }
 
-                inline void setRelativePosition(sf::Vector2f relativePos) {
-                    this->m_relativePosition = relativePos;
-                }
+                inline void setDimensions(sf::Vector2f dims) {
+                    this->m_dims = dims;
+                };
 
                 inline void setGridArea(std::string areaID) {
                     this->m_gridArea = areaID;
                 }
 
-                inline void setParentComponent(UIComponent* parent) {
-                    this->m_parent = parent;
+                inline void setID(std::string id) {
+                    this->m_id = id;
                 }
 
                 [[nodiscard]] inline sf::Vector2f getRelativePosition() const {
@@ -173,25 +189,34 @@ namespace UIEngine {
                     return this->m_gridArea;
                 }
 
-                [[nodiscard]] inline UIComponent* getParentComponent() const {
-                    return this->m_parent;
+                [[nodiscard]] inline sf::Vector2f getDims() const {
+                    return this->m_dims;
                 }
-            
+                
                 virtual void update_(GlobalEvents::GlobalHandler*) = 0;
+                virtual void render() = 0;
             
             protected:
                 sf::Vector2f m_relativePosition;
+                sf::Vector2f m_dims;
                 Alignment::Margin m_margin;
                 Alignment::Margin m_padding;
                 Alignment::SelfAlign m_selfAlignment;
-
+                
                 std::string m_gridArea{""};
+                std::string m_id;
 
-                UIComponent* m_parent{nullptr};
+                bool visibillity{true};
+                bool isInteractible{true};
         };
 
         class UICContainer : public UIComponent, public sf::RectangleShape {
             public:
+                UICContainer() = default;
+
+                UICContainer(std::string id, sf::Vector2f relPos, sf::Vector2f dims,
+                            Alignment::Margin margin, Alignment::Margin padding,
+                            Alignment::SelfAlign selfAlign, Alignment::InnerAlignment innerAlignmentMode)
 
                 virtual ~UICContainer() = default;
 
@@ -223,6 +248,12 @@ namespace UIEngine {
                     return this->m_child;
                 }
 
+                inline void setParent(UICContainer* parent) const {
+                    this->m_parent = parent;
+                }
+
+                
+
                 [[nodiscard]] UIComponent& getUIItem(std::string id) const {
                     for (UIComponent& comp : this->m_uiItems) {
                         if (comp.id == id) {
@@ -236,15 +267,16 @@ namespace UIEngine {
                 }
 
             protected:
+                Alignment::InnerAlignment m_innerAlignmentMode;
                 Alignment::GridTemplate m_alignmentMatrix;
                 Alignment::FlexDirection m_flexDirection;
                 Alignment::FlexJustifyContent m_justifyContentMode;
                 Alignment::FlexAlignItems m_itemAlignment;
 
-                UICContainer* m_parent;
-                UICContainer* m_child;
+                UIComponent* m_parent;
+                UIComponent* m_child[100]; // Maximum amount of childs
 
-                std::vector<UIComponent>* m_uiItems;
+
         };
 
     }

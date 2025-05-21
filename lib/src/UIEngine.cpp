@@ -122,4 +122,26 @@ void UIComponents::Interactible::setOnMouseDown(GlobalEvents::ECallbackAttechmen
 void UIComponents::Interactible::setOnMouseUp(GlobalEvents::ECallbackAttechment cb)
 { this->m_eventCallbackMap[UIItemEventAction::MOUSEUP] = cb; }
 
-//#-- Definitions of UIComponent abstract class
+//#-- Definition of abstract UIComponent
+UIComponents::UIComponent::UIComponent(std::string id, sf::Vector2f relPos, sf::Vector2f dims,
+                            Alignment::Margin margin, Alignment::Margin padding,
+                            Alignment::SelfAlign selfAlign) {
+    setID(id);
+    setRelativePosition(relPos);
+    setDimensions(dims);
+    setMargin(margin);
+    setPadding(padding);
+    setSelfAlign(selfAlign);
+}
+
+//#-- Definitions of UICContainer
+
+UIComponents::UICContainer::UICContainer(std::string id, sf::Vector2f relPos, sf::Vector2f dims,
+                            Alignment::Margin margin, Alignment::Margin padding,
+                            Alignment::SelfAlign selfAlign, Alignment::InnerAlignment innerAlignmentMode) :
+
+UIComponent(id, relPos, dims, margin, padding, selfAlign) {
+    this->m_innerAlignmentMode = innerAlignmentMode;
+    this->setSize(dims);
+    this->isInteractible = false;
+}
