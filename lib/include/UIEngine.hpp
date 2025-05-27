@@ -16,7 +16,7 @@ namespace UIEngine {
     } UIItemEventAction;
 
     namespace Alignment {
-        template <typename Numeric>
+        /*template <typename Numeric>
         struct Vector {
             Numeric x;
             Numeric y;
@@ -24,6 +24,15 @@ namespace UIEngine {
             Vector(Numeric x, Numeric y) : x(x), y(y) {};
             Vector() = default;
         };
+
+        template <typename Numeric>
+        struct VectorTuple2d {
+            Vector<Numeric> vector1;
+            Vector<Numeric> vector2;
+
+            VectorTuple2d(Vector<Numeric> first, Vector<Numeric> second) : vector1(first), vector2(second) {};
+            VectorTuple2f() = default;
+        }*/
 
         typedef struct Margin {
             float left;
@@ -46,7 +55,8 @@ namespace UIEngine {
             SA_RELATIVE,
             SA_CENTER,
             SA_START,
-            SA_END
+            SA_END,
+            SA_NO_OVERRIDE
         } SelfAlign;
         
         //#-- Flex settings
@@ -71,26 +81,27 @@ namespace UIEngine {
 
         //#-- Grid Settings
         typedef struct GridTemplate {
-            Alignment::Vector<float>* gridTemplateRows{nullptr};
-            Alignment::Vector<float>* gridTemplateColumns{nullptr};
-            std::string** gridTemplateAreas{nullptr};
+            public:                
+                
+                GridTemplate() = default;
+                GridTemplate(unsigned int, unsigned int);
+                ~GridTemplate();
 
-            //#-- Return value may be unused
-            [[maybe_unused]] bool setGridRows(unsigned int, Alignment::Vector<float> ...);
-            [[maybe_unused]] bool setGridColumns(unsigned int, Alignment::Vector<float>  ...);
-            [[maybe_unused]] bool setGridAreaIDs(std::string);
+                void setGridRows(unsigned int, ...);
+                void setGridColumns(unsigned int, ...);
 
-            [[nodiscard]] inline bool usable() const { return this->m_completed; }
+                [[nodiscard]] std::array<sf::Vector2f, 2> getLimitPointForArea(int, int) const;
             
-            GridTemplate() = default;
-            ~GridTemplate();
             private:
+                float* m_gridTemplateRows{nullptr};
+                float* m_gridTemplateColumns{nullptr};
 
-                [[nodiscard]] bool m_checkUsabillity() const;
+                sf::Vector2f** m_representationMatrix{nullptr};
 
-                unsigned int m_rowDiff{0};
-                unsigned int m_columnDiff{0};
-                bool m_completed{false};
+                void mf_generateReprMatrix();
+
+                unsigned int m_rowDiv{1};
+                unsigned int m_columnDiv{1};
 
         } GridTemplate;
     }
@@ -132,7 +143,7 @@ namespace UIEngine {
                 UIComponent() = default;
                 UIComponent(std::string id, sf::Vector2f relPos, sf::Vector2f dims,
                             Alignment::Margin margin, Alignment::Margin padding,
-                            Alignment::SelfAlign selfAlign)
+                            Alignment::SelfAlign selfAlign);
 
                 virtual ~UIComponent() = default;
 
@@ -161,13 +172,22 @@ namespace UIEngine {
                     this->m_dims = dims;
                 };
 
-                inline void setGridArea(std::string areaID) {
-                    this->m_gridArea = areaID;
+                inline void setGridArea(float row, float column) {
+                    this->m_gridArea[0] = row;
+                    this->m_gridArea[1] = column;
                 }
 
                 inline void setID(std::string id) {
                     this->m_id = id;
                 }
+
+                inline void setVisible() { this->m_visibillity = true; }
+                inline void setHidden() { this->m_visibillity = false; }
+
+                [[nodiscard]] inline bool isVisible() {return this->m_visibillity;}
+
+                [[nodiscard]] bool isContainer() { this->m_isContainer; }
+                [[nodiscard]] bool isInteractible() { this->m_isInteractible; }
 
                 [[nodiscard]] inline sf::Vector2f getRelativePosition() const {
                     return this->m_relativePosition;
@@ -185,7 +205,7 @@ namespace UIEngine {
                     return this->m_selfAlignment;
                 }
 
-                [[nodiscard]] inline std::string getGridArea() const {
+                [[nodiscard]] inline const float* getGridArea() const {
                     return this->m_gridArea;
                 }
 
@@ -193,21 +213,24 @@ namespace UIEngine {
                     return this->m_dims;
                 }
                 
-                virtual void update_(GlobalEvents::GlobalHandler*) = 0;
-                virtual void render() = 0;
+                //virtual void update_(GlobalEvents::GlobalHandler*) = 0;
+                virtual void render(sf::RenderWindow*) = 0;
             
             protected:
-                sf::Vector2f m_relativePosition;
-                sf::Vector2f m_dims;
                 Alignment::Margin m_margin;
                 Alignment::Margin m_padding;
                 Alignment::SelfAlign m_selfAlignment;
                 
-                std::string m_gridArea{""};
+                sf::Vector2f m_relativePosition;
+                sf::Vector2f m_dims;
+
+                
+                float m_gridArea[2];
                 std::string m_id;
 
-                bool visibillity{true};
-                bool isInteractible{true};
+                bool m_visibillity{true};
+                bool m_isContainer{false};
+                bool m_isInteractible{false};
         };
 
         class UICContainer : public UIComponent, public sf::RectangleShape {
@@ -216,7 +239,7 @@ namespace UIEngine {
 
                 UICContainer(std::string id, sf::Vector2f relPos, sf::Vector2f dims,
                             Alignment::Margin margin, Alignment::Margin padding,
-                            Alignment::SelfAlign selfAlign, Alignment::InnerAlignment innerAlignmentMode)
+                            Alignment::SelfAlign selfAlign, Alignment::InnerAlignment innerAlignmentMode);
 
                 virtual ~UICContainer() = default;
 
@@ -236,35 +259,29 @@ namespace UIEngine {
                     return this->m_itemAlignment;
                 }
 
-                [[nodiscard]] inline sf::RectangleShape getShape() const {
-                    return this->m_shape;
-                }
-
                 [[nodiscard]] inline UICContainer* getParent() const {
                     return this->m_parent;
                 }
 
-                [[nodiscard]] inline UICContainer* getChild() const {
-                    return this->m_child;
-                }
-
-                inline void setParent(UICContainer* parent) const {
+                inline void setParent(UICContainer* parent)  {
                     this->m_parent = parent;
                 }
 
-                
-
-                [[nodiscard]] UIComponent& getUIItem(std::string id) const {
-                    for (UIComponent& comp : this->m_uiItems) {
-                        if (comp.id == id) {
-                            return comp;
-                        }
-                    }
+                inline void setInnerAlignmentMode(Alignment::InnerAlignment innerAlignmentMode) {
+                    this->m_innerAlignmentMode = innerAlignmentMode;
                 }
 
-                [[nodiscard]] std::vector<UIComponent>* getUIItems() const {
-                    return this->m_uiItems;
+                inline void deployGridTemplate(Alignment::GridTemplate& grid) {
+                    this->m_alignmentMatrix = grid;
                 }
+
+                void appendChild(UIComponent*);
+
+                void justifyFlex();
+                void justifyGrid();
+                void justifyRelative();
+
+                virtual void render(sf::RenderWindow*) override;
 
             protected:
                 Alignment::InnerAlignment m_innerAlignmentMode;
@@ -273,10 +290,8 @@ namespace UIEngine {
                 Alignment::FlexJustifyContent m_justifyContentMode;
                 Alignment::FlexAlignItems m_itemAlignment;
 
-                UIComponent* m_parent;
-                UIComponent* m_child[100]; // Maximum amount of childs
-
-
+                UICContainer* m_parent;
+                UIComponent* m_childs[100]; // Maximum amount of childs
         };
 
     }

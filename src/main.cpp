@@ -1,7 +1,6 @@
 #include <iostream>
 #include <thread>
 #include <SFML/Graphics.hpp>
-
 #include "Test.hpp"
 
 sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1700, 1000), "Escape To Eclipse", sf::Style::Default);
@@ -11,13 +10,14 @@ GlobalEvents::GlobalHandler* hnd = new GlobalEvents::GlobalHandler(window);
 void initBasicEventFunctionallity(GlobalEvents::GlobalHandler*);
 
 int main() {    
-
+    Dialog* d = new Dialog();
     window->setFramerateLimit(60);
     initBasicEventFunctionallity(hnd);
 
     while (window->isOpen()) {
         window->clear(sf::Color::Black);
         hnd->pollAndExecuteEvents();
+        d->render(window);
         window->display();    
     }
 
