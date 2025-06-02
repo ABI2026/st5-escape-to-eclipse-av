@@ -7,7 +7,7 @@ namespace UITemplates {
     class UIButton : public UIComponent, public Interactible, public sf::RectangleShape {
         public:
             UIButton() = default;
-            UIButton();
+            UIButton(sf::Vector2f, sf::Vector2f);
         private:
 
     }

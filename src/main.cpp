@@ -10,14 +10,16 @@ GlobalEvents::GlobalHandler* hnd = new GlobalEvents::GlobalHandler(window);
 void initBasicEventFunctionallity(GlobalEvents::GlobalHandler*);
 
 int main() {    
-    Dialog* d = new Dialog();
     window->setFramerateLimit(60);
     initBasicEventFunctionallity(hnd);
+
+    UIEngine::UIConfig::UITheme c("HelloColorScales", sf::Color(255, 106, 0), sf::Color(255, 0, 0));
+
+    c.represent();
 
     while (window->isOpen()) {
         window->clear(sf::Color::Black);
         hnd->pollAndExecuteEvents();
-        d->render(window);
         window->display();    
     }
 
