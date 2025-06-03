@@ -26,8 +26,8 @@ FetchContent_MakeAvailable(SFML)
 add_subdirectory(${LIB_PATH})
 
 # Get all local files recursively
-file(GLOB_RECURSE SRC_FILES ${LOCAL_SOURCES_PATH}/*.cpp)
-file(GLOB_RECURSE HEADERS ${LOCAL_INCLUDE_PATH}/*.hpp)
+file(GLOB_RECURSE SRC_FILES "${LOCAL_SOURCES_PATH}/*.cpp")
+file(GLOB_RECURSE HEADERS "${LOCAL_INCLUDE_PATH}/*.hpp")
 
 # Init executable
 add_executable(${PROJECT_NAME} ${SRC_FILES})

@@ -2,7 +2,11 @@
 #define UI_ENGINE
 
 #include "framework_env.hpp"
-#include "EventSystem.hpp"
+
+//#-- Foreward
+namespace GlobalEvents {
+    using ECallbackAttechment = std::function<void(const sf::Event&)>;
+}
 
 #include "Utillity.hpp"
 
@@ -105,19 +109,13 @@ namespace UIEngine {
 
         typedef struct UIStyleClass {
             sf::Vector2f dims;
-            UIEngine::Alignment::Margin margin;
-            UIEngine::Alignment::Margin padding;
-            UIEngine::Alignment::InnerAlignment innerAlignmentMode = UIEngine::Alignment::InnerAlignment::IA_RELATIVE;
+            UIEngine::Alignment::Margin margin = Alignment::Margin(0, 0, 0, 0);
+            UIEngine::Alignment::Margin padding = Alignment::Margin(0, 0, 0, 0);
             UIEngine::Alignment::SelfAlign selfAlign = UIEngine::Alignment::SelfAlign::SA_NO_OVERRIDE;
-            UIEngine::Alignment::FlexDirection flexDirection = UIEngine::Alignment::FlexDirection::D_DEFAULT;
-            UIEngine::Alignment::FlexJustifyContent justifyContent = UIEngine::Alignment::FlexJustifyContent::J_DEFAULT;
-            UIEngine::Alignment::FlexAlignItems alignItems = UIEngine::Alignment::FlexAlignItems::AL_DEFAULT;
             
             sf::Color borderColor = sf::Color(0, 0, 0);
             sf::Color backgroundColor = sf::Color(0, 0, 0);
             sf::Color textColor = sf::Color(0, 0, 0);
-
-            UIEngine::Alignment::GridTemplate grid{};
 
             unsigned int gridArea[2];
 
@@ -126,6 +124,18 @@ namespace UIEngine {
             UIStyleClass(std::string name) : name(name) {}
             UIStyleClass() = default;
         } UIStyleClass;
+
+        typedef struct UICContainerStyleClass : public UIStyleClass {
+            UIEngine::Alignment::InnerAlignment innerAlignmentMode = UIEngine::Alignment::InnerAlignment::IA_RELATIVE;
+            UIEngine::Alignment::FlexDirection flexDirection = UIEngine::Alignment::FlexDirection::D_DEFAULT;
+            UIEngine::Alignment::FlexJustifyContent justifyContent = UIEngine::Alignment::FlexJustifyContent::J_DEFAULT;
+            UIEngine::Alignment::FlexAlignItems alignItems = UIEngine::Alignment::FlexAlignItems::AL_DEFAULT;
+
+            UIEngine::Alignment::GridTemplate grid{};
+
+            UICContainerStyleClass() = default;
+            UICContainerStyleClass(std::string name) : UIStyleClass(name) {}
+        } UICContainerStyleClass;
 
         typedef struct UITheme {
             /*
@@ -138,7 +148,8 @@ namespace UIEngine {
             public:
                 UITheme() = default;
                 UITheme(std::string, sf::Color, sf::Color, std::tuple<unsigned int, unsigned int> = std::make_tuple(0, 10));
-                ~UITheme();
+
+                ~UITheme() = default;
 
                 [[nodiscard]] sf::Color getPrimaryAccentColor(unsigned int) const;
                 [[nodiscard]] sf::Color getSecondaryAccentColor(unsigned int) const;
@@ -162,12 +173,12 @@ namespace UIEngine {
 
             private:
 
-                bool m_generateScales(std::tuple<unsigned int, unsigned int>, sf::Color, sf::Color*);
+                bool m_generateScales(std::tuple<unsigned int, unsigned int>, sf::Color, std::vector<sf::Color>&);
                 void m_setDefaultColor(std::string, UIThemeClrSet, unsigned int);
 
-                sf::Color* m_primaryAccentColorScales{nullptr};
-                sf::Color* m_secondaryAccentColorScales{nullptr};
-                sf::Color* m_grayscales{nullptr};
+                std::vector<sf::Color> m_primaryAccentColorScales;
+                std::vector<sf::Color> m_secondaryAccentColorScales;
+                std::vector<sf::Color> m_grayscales;
                 std::string m_identifier;
                 std::tuple<unsigned int, unsigned int> m_scaleRange;
 
@@ -178,20 +189,19 @@ namespace UIEngine {
         class UIConfigurator {
             public:
                 UIConfigurator() = default;
-                ~UIConfigurator() = default;
+                virtual ~UIConfigurator() = default;
 
                 void addTheme(UITheme);
-                void addUIStyleClass(UIStyleClass);
-                bool removeThemeByID(std::string);
-                bool removeUIStyleClassByID(std::string);
+                void setCurrentTheme(std::string);
                 
-                UIStyleClass getUIStyleClassByID(std::string);
-                UITheme getUIThemeByID(std::string);
+                [[nodiscard]] UITheme getUIThemeByID(std::string);
+                [[nodiscard]] UITheme getCurrentTheme();
 
-                virtual void init() = 0; 
-            private:
-                std::vector<UITheme> m_uiThemes;
-                std::vector<UIStyleClass> m_uiStyleClasses;
+                virtual void init() = 0;
+            protected:
+                std::unordered_map<std::string, UITheme> m_uiThemes;
+
+                std::string m_currentTheme{"Hologram"};
         };
     }
 
@@ -241,7 +251,7 @@ namespace UIEngine {
         class UIOverlay {
             public:
                 UIOverlay(std::string, std::string);
-                ~UIOverlay();
+                virtual ~UIOverlay() = default;
 
                 void setBackground(std::string);
 
@@ -255,7 +265,7 @@ namespace UIEngine {
         class UIComponent {
             public:
                 UIComponent() = default;
-                UIComponent(std::string, sf::Vector2f, UIEngine::UIConfig::UIStyleClass);
+                UIComponent(std::string, sf::Vector2f, UIConfig::UITheme&);
 
                 virtual ~UIComponent() = default;
 
@@ -268,33 +278,8 @@ namespace UIEngine {
                     this->m_relativePosition = relPos;
                 }
 
-                inline void overideSelfAlign(Alignment::SelfAlign selfAlignMode) { 
-                    this->m_overrideStyleClass.selfAlign = selfAlignMode;
-                }
-
-                inline void overrideMargin(Alignment::Margin margin) {
-                    this->m_overrideStyleClass.margin = margin;
-                }
-
-                inline void overridePadding(Alignment::Margin padding) {
-                    this->m_overrideStyleClass.padding = padding;
-                }
-
-                inline void overrideDimensions(sf::Vector2f dims) {
-                    this->m_overrideStyleClass.dims = dims;
-                }
-
-                inline void overrideGridArea(unsigned int row, unsigned int column) {
-                    this->m_overrideStyleClass.gridArea[0] = row;
-                    this->m_overrideStyleClass.gridArea[1] = column;
-                }
-
                 inline void setID(std::string id) { 
                     this->m_id = id; 
-                }
-
-                inline void setStyleToDefault() { 
-                    this->m_overrideStyleClass = this->m_defaultStyleClass; 
                 }
 
                 inline void setVisible() { this->m_visibillity = true; }
@@ -308,36 +293,15 @@ namespace UIEngine {
                 [[nodiscard]] inline sf::Vector2f getRelativePosition() const {
                     return this->m_relativePosition;
                 }
-
-                [[nodiscard]] inline Alignment::Margin getMargin() const {
-                    return this->m_overrideStyleClass.margin;
-                }
-
-                [[nodiscard]] inline Alignment::Margin getPadding() const {
-                    return this->m_overrideStyleClass.padding;
-                }
-
-                [[nodiscard]] inline Alignment::SelfAlign getSelfAlignMode() const {
-                    return this->m_overrideStyleClass.selfAlign;
-                }
-
-                [[nodiscard]] inline const unsigned int* getGridArea() const {
-                    return this->m_overrideStyleClass.gridArea;
-                }
-
-                [[nodiscard]] inline sf::Vector2f getDims() const {
-                    return this->m_overrideStyleClass.dims;
-                }
                 
                 //virtual void update_(GlobalEvents::GlobalHandler*) = 0;
                 virtual void render(sf::RenderWindow*) = 0;
             
             protected:
-                UIConfig::UIStyleClass m_defaultStyleClass;
-                UIConfig::UIStyleClass m_overrideStyleClass;
                 
                 sf::Vector2f m_relativePosition;
                 std::string m_id;
+                UIConfig::UITheme& m_colorTheme;
 
                 bool m_visibillity{true};
                 bool m_isContainer{false};
@@ -348,7 +312,7 @@ namespace UIEngine {
             public:
 
                 UICContainer() = default;
-                UICContainer(std::string id, sf::Vector2f relPos, UIConfig::UIStyleClass);
+                UICContainer(std::string id, sf::Vector2f relPos, UIConfig::UITheme&);
 
                 virtual ~UICContainer() = default;
 
@@ -370,7 +334,7 @@ namespace UIEngine {
                 virtual void render(sf::RenderWindow*) override;
 
             protected:
-
+                UIConfig::UICContainerStyleClass style;
                 UICContainer* m_parent;
                 UIComponent* m_childs[100]; // Maximum amount of childs
         };

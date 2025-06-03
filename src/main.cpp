@@ -1,7 +1,10 @@
 #include <iostream>
 #include <thread>
 #include <SFML/Graphics.hpp>
-#include "Test.hpp"
+
+#include "EventSystem.hpp"
+#include "UIEngine.hpp"
+#include "UI/Config.hpp"
 
 sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(1700, 1000), "Escape To Eclipse", sf::Style::Default);
 GlobalEvents::GlobalHandler* hnd = new GlobalEvents::GlobalHandler(window);
@@ -13,9 +16,12 @@ int main() {
     window->setFramerateLimit(60);
     initBasicEventFunctionallity(hnd);
 
-    UIEngine::UIConfig::UITheme c("HelloColorScales", sf::Color(255, 106, 0), sf::Color(255, 0, 0));
+    EscapeToEclipse::UI::GameUIConfig UICONF = EscapeToEclipse::UI::GameUIConfig::getSingleton();
 
-    c.represent();
+    UICONF.setCurrentTheme("Mars Dirt");
+    std::cout << UICONF.getCurrentTheme().getName() << std::endl;
+    UIEngine::UIConfig::UITheme t = UICONF.getCurrentTheme();
+    t.represent();
 
     while (window->isOpen()) {
         window->clear(sf::Color::Black);
