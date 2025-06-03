@@ -8,6 +8,9 @@ set(LOCAL_INCLUDE_PATH ${CMAKE_SOURCE_DIR}/include)
 set(LIB_PATH ${CMAKE_SOURCE_DIR}/lib)
 set(SFML_STATIC_LIBRARIES TRUE)
 
+set(RESOURCE_DIR ${CMAKE_SOURCE_DIR}/resources)
+set(RESOURCE_DEST ${CMAKE_BINARY_DIR}/resources)
+
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_compile_options(-w)
@@ -42,3 +45,13 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     sfml-window 
     sfml-graphics
 )
+
+# Make install available
+
+add_custom_command(TARGET Escape-To-Eclipse PRE_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${RESOURCE_DIR} ${RESOURCE_DEST}
+)
+
+install(TARGETS Escape-To-Eclipse DESTINATION bin)
+install(DIRECTORY ${RESOURCE_DIR}/ DESTINATION ${RESOURCE_DEST})

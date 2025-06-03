@@ -204,28 +204,59 @@ namespace UIEngine {
                 std::string m_currentTheme{"Hologram"};
         };
     }
+    typedef enum NavigationDirection : unsigned int {
+        FOREWARD,
+        BACKWARD,
+        DEFAULT
+    } NavigationDirection;
+
+    /*class UIOverlayCluster {
+        public:
+            UIOverlayCluster() = default;
+            ~UIOverlayCluster() = default;
+
+            inline void setActive() { this->m_active = true; }
+            inline void setInactive() { this->m_active = false; }
+
+            [[nodiscard]] bool isActive() { return this->m_active; }
+
+            bool navigate(NavigationDirection);
+            bool navigate(std::string);
+
+            void render(sf::RenderWindow* window);
+
+        protected:
+            //#-- Ordered vector. Order by Idx
+            std::vector<UIComponents::UIOverlay> m_uiOverlays;
+            int m_currentOverlay{0};
+            bool m_active{false};
+        
+    };*/
 
     class UIOverlayManager {
         public:
-            UIOverlayManager(sf::RenderWindow*, UIConfig::UIConfigurator*);
-            ~UIOverlayManager();
+            UIOverlayManager(sf::RenderWindow*, UIConfig::UIConfigurator&, std::string);
+            ~UIOverlayManager() = default;
 
-            void render();
-            void navigate(std::string);
+            void navigate(std::string, NavigationDirection);
+            void navigate(std::string, std::string);
 
-            void appendUIOverlay(UIComponents::UIOverlay*);
 
-            void setRessourcesPath(std::string path) {
-                this->m_ressourcesPath = path;
+            void setResourcesPath(std::string path) {
+                this->m_UIResourcesPath = path;
             }
 
-        private:
-            sf::RenderWindow* m_window;
-            UIConfig::UIConfigurator* m_uiConfig{nullptr};
+            void render();
+            
+        protected:
+            sf::RenderWindow* m_window{nullptr};
+            UIConfig::UIConfigurator& m_uiConfig;
 
-            UIComponents::UIOverlay* m_uiOverlaysHead;
+            std::unordered_map<std::string, UIOverlayCluster> m_clusters;
 
-            std::string m_ressourcesPath;
+            std::string m_UIResourcesPath;
+
+            void m_setInactiveAll();
     };
 
     namespace UIComponents {
@@ -250,12 +281,17 @@ namespace UIEngine {
         };
         class UIOverlay {
             public:
+                UIOverlay() = default;
                 UIOverlay(std::string, std::string);
                 virtual ~UIOverlay() = default;
 
                 void setBackground(std::string);
 
-                virtual void render() = 0;
+                [[nodiscard]] std::string getNavigationID() const {
+                    return this->m_navigationID;
+                }
+
+                virtual void render(sf::RenderWindow* window) = 0;
 
             private:
                 std::string m_navigationID;
@@ -294,7 +330,6 @@ namespace UIEngine {
                     return this->m_relativePosition;
                 }
                 
-                //virtual void update_(GlobalEvents::GlobalHandler*) = 0;
                 virtual void render(sf::RenderWindow*) = 0;
             
             protected:

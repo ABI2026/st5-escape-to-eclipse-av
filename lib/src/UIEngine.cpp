@@ -278,7 +278,81 @@ UIConfig::UITheme UIConfig::UIConfigurator::getCurrentTheme() {
 void UIConfig::UIConfigurator::setCurrentTheme(std::string id) {
     this->m_currentTheme = id;
 }
+//#-- Definitions of UIOverlayManager
 
+UIOverlayManager::UIOverlayManager(sf::RenderWindow* win, UIConfig::UIConfigurator& uiconftr, std::string uiResourcesPath)
+: m_window(win), m_uiConfig(uiconftr), m_UIResourcesPath(uiResourcesPath) {
+   //--
+}
+
+void UIOverlayManager::navigate(std::string clusterID, NavigationDirection navDir) {
+    this->m_setInactiveAll();
+    this->m_clusters[clusterID].setActive();
+    this->m_clusters[clusterID].navigate(navDir);
+}
+
+void UIOverlayManager::navigate(std::string clusterID, std::string overlayID) {
+    this->m_setInactiveAll();
+    this->m_clusters[clusterID].setActive();
+    this->m_clusters[clusterID].navigate(overlayID);
+}
+
+void UIOverlayManager::render() {
+    for (auto& pair : this->m_clusters) {
+        if (pair.second.isActive()) {
+            pair.second.render(this->m_window);
+        }
+    }
+}
+
+void UIOverlayManager::m_setInactiveAll() {
+    for (auto& pair : this->m_clusters) {
+        pair.second.setInactive();
+    }
+}
+
+//#-- Definitions of UIOverlayCluster
+
+/*bool UIOverlayCluster::navigate(NavigationDirection direction) {
+    switch (direction) {
+        case NavigationDirection::FOREWARD:
+            if (this->m_currentOverlay < this->m_uiOverlays.size()-1) {
+                this->m_currentOverlay++;
+                return true; 
+            }
+            return false;
+            break;
+        case NavigationDirection::BACKWARD:
+            if (this->m_currentOverlay > this->m_uiOverlays.size()-1) {
+                this->m_currentOverlay--;
+                return true;
+            }
+            break;
+        case NavigationDirection::DEFAULT:
+            this->m_currentOverlay = 0;
+            break;
+        default:
+            return false;
+            break;
+    }
+}
+
+bool UIOverlayCluster::navigate(std::string overlayID) {
+    unsigned int idx{-1};
+    for (UIComponents::UIOverlay& overlay : this->m_uiOverlays) {
+        idx++;
+        if (overlay.getNavigationID() == overlayID) {
+            this->m_currentOverlay = idx;
+            return true;
+        }
+    }
+    return false;
+}
+
+void UIOverlayCluster::render(sf::RenderWindow* window) {
+    this->m_uiOverlays[this->m_currentOverlay].render(window);
+}
+*/
 //#-- Definitions of UIOverlay
 
 UIComponents::UIOverlay::UIOverlay(std::string id, std::string backgroundTexturePath) 
