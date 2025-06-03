@@ -163,6 +163,12 @@ void UIComponents::UICContainer::render(sf::RenderWindow* window) {
 }
 
 //#-- Definitions of UIConfig
+
+const sf::Color UIConfig::UITheme::error = sf::Color(255, 0, 0);
+const sf::Color UIConfig::UITheme::warn = sf::Color(255, 230, 0);
+const sf::Color UIConfig::UITheme::success = sf::Color(0, 255, 20);
+const sf::Color UIConfig::UITheme::perimtted = sf::Color(0, 30, 255);
+
 UIConfig::UITheme::UITheme(std::string identifier, sf::Color primary, sf::Color secondary, std::tuple<unsigned int, unsigned int> scaleRange) {
     this->m_primaryAccentColorScales = new sf::Color[std::get<1>(scaleRange)];
     this->m_secondaryAccentColorScales = new sf::Color[std::get<1>(scaleRange)];
@@ -275,29 +281,56 @@ void UIConfig::UIConfigurator::addUIStyleClass(UIConfig::UIStyleClass uiStyleCla
 }
 
 bool UIConfig::UIConfigurator::removeThemeByID(std::string id) {
-    int idx{0};
+    int idx{-1};
     bool success{false};
     for (UITheme& themeObj : this->m_uiThemes) {
+        idx++;
         if (themeObj.getName() == id) {
-            success{true};
+            success = true;
             break;
         }
-        idx++;
     }
     this->m_uiThemes.erase(this->m_uiThemes.begin() + idx);
     return success;
 }
 
 bool UIConfig::UIConfigurator::removeUIStyleClassByID(std::string id) {
-    int idx{0};
+    int idx{-1};
     bool success{false};
     for (UIStyleClass& styleClass : this->m_uiStyleClasses) {
+        idx++;
         if (styleClass.name == id) {
-            success{true};
+            success = true;
             break;
         }
-        idx++
     }
     this->m_uiStyleClasses.erase(this->m_uiStyleClasses.begin() + idx);
     return success;
+}
+
+UIConfig::UIStyleClass UIConfig::UIConfigurator::getUIStyleClassByID(std::string id) {
+    UIConfig::UIStyleClass desrdClass;
+    for (auto& styleClassObj : this->m_uiStyleClasses) {
+        if (styleClassObj.name == id) {
+            desrdClass = styleClassObj;
+        }
+    }
+    return desrdClass;
+}
+
+UIConfig::UITheme UIConfig::UIConfigurator::getUIThemeByID(std::string id) {
+    UIConfig::UITheme desrdTheme;
+    for (auto& uiThemeObj : this->m_uiThemes) {
+        if (uiThemeObj.getName() == id) {
+            desrdTheme = uiThemeObj;
+        }
+    }
+    return desrdTheme;
+}
+
+//#-- Definitions of UIOverlay
+
+UIComponents::UIOverlay::UIOverlay(std::string id, std::string backgroundTexturePath) 
+: m_navigationID(id) {
+    this->m_background.loadFromFile(backgroundTexturePath);
 }

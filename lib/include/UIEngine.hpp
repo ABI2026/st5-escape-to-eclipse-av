@@ -15,6 +15,11 @@ namespace UIEngine {
         MOUSEUP = 3,
     } UIItemEventAction;
 
+    //#-- Foreward
+    namespace UIComponents {
+        class UIOverlay;
+    }
+
     namespace Alignment {
         typedef struct Margin {
             float left;
@@ -119,6 +124,7 @@ namespace UIEngine {
             std::string name;
 
             UIStyleClass(std::string name) : name(name) {}
+            UIStyleClass() = default;
         } UIStyleClass;
 
         typedef struct UITheme {
@@ -130,6 +136,7 @@ namespace UIEngine {
                     - font
             */
             public:
+                UITheme() = default;
                 UITheme(std::string, sf::Color, sf::Color, std::tuple<unsigned int, unsigned int> = std::make_tuple(0, 10));
                 ~UITheme();
 
@@ -147,6 +154,11 @@ namespace UIEngine {
                 inline const std::string getName() const {
                     return this->m_identifier;
                 }
+
+                static const sf::Color error;
+                static const sf::Color warn;
+                static const sf::Color success;
+                static const sf::Color perimtted;
 
             private:
 
@@ -173,8 +185,10 @@ namespace UIEngine {
                 bool removeThemeByID(std::string);
                 bool removeUIStyleClassByID(std::string);
                 
-                const UIStyleClass getUIStyleClassByID(std::string);
-                const UITheme getUIThemeByID(std::string);
+                UIStyleClass getUIStyleClassByID(std::string);
+                UITheme getUIThemeByID(std::string);
+
+                virtual void init() = 0; 
             private:
                 std::vector<UITheme> m_uiThemes;
                 std::vector<UIStyleClass> m_uiStyleClasses;
@@ -182,7 +196,26 @@ namespace UIEngine {
     }
 
     class UIOverlayManager {
+        public:
+            UIOverlayManager(sf::RenderWindow*, UIConfig::UIConfigurator*);
+            ~UIOverlayManager();
 
+            void render();
+            void navigate(std::string);
+
+            void appendUIOverlay(UIComponents::UIOverlay*);
+
+            void setRessourcesPath(std::string path) {
+                this->m_ressourcesPath = path;
+            }
+
+        private:
+            sf::RenderWindow* m_window;
+            UIConfig::UIConfigurator* m_uiConfig{nullptr};
+
+            UIComponents::UIOverlay* m_uiOverlaysHead;
+
+            std::string m_ressourcesPath;
     };
 
     namespace UIComponents {
@@ -206,8 +239,18 @@ namespace UIEngine {
 
         };
         class UIOverlay {
-            
+            public:
+                UIOverlay(std::string, std::string);
+                ~UIOverlay();
 
+                void setBackground(std::string);
+
+                virtual void render() = 0;
+
+            private:
+                std::string m_navigationID;
+                sf::Texture m_background;
+                
         };
         class UIComponent {
             public:
@@ -316,14 +359,6 @@ namespace UIEngine {
 
                 inline void setParent(UICContainer* parent)  {
                     this->m_parent = parent;
-                }
-
-                inline void setInnerAlignmentMode(Alignment::InnerAlignment innerAlignmentMode) {
-                    this->m_innerAlignmentMode = innerAlignmentMode;
-                }
-
-                inline void deployGridTemplate(Alignment::GridTemplate& grid) {
-                    this->m_alignmentMatrix = grid;
                 }
 
                 void appendChild(UIComponent*);
